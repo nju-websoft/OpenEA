@@ -1,0 +1,43 @@
+{
+	"training_data": "../../datasets/",
+  	"output": "../../output/results/",
+  	"dataset_division": "721_5fold",
+
+  	"embedding_module": "JAPE",
+  	"alignment_module": "sharing",
+	"search_module": "greedy",
+	  
+    "dim": 100,
+  	"init": "normal",
+	"ent_l2_norm": true,
+	"rel_l2_norm": true,
+	"loss_norm": "L2",
+
+	"learning_rate": 0.01,
+    "optimizer": "Adagrad",
+	"max_epoch": 2000,
+	"batch_size": 20000,
+
+	"attr_max_epoch": 200,
+	"top_attr_threshold": 0.9,
+	"attr_sim_mat_threshold": 0.95,
+	"attr_sim_mat_beta": 0.001,
+	"neg_alpha": 0.1,
+
+  	"neg_sampling": "uniform",
+	"neg_triple_num": 1,
+	"sub_mat_size": 1000,
+
+	"batch_threads_num": 3,
+	"test_threads_num": 10,
+
+	"ordered": true,
+	"start_valid": 100,
+	"eval_freq": 10,
+	"stop_metric": "hits1",
+	"eval_metric": "inner",
+	"csls": 10,
+	"top_k": [1, 5, 10, 50],
+	"is_save": true,
+	"eval_norm": false
+}
