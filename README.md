@@ -247,7 +247,7 @@ We use the precision (P), recall (R) and F1-score (F1) as the evaluation metrics
 [**detailed_results_conventional_approaches_100K.csv**](https://github.com/nju-websoft/OpenEA/blob/master/docs/detailed_results_conventional_approaches_100K.csv)
 
 ## License
-This project is licensed under the GPL License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL License - see the [LICENSE](LICENSE) file for details
 
 ## Citation
 If you find the benchmark datasets, the OpenEA library or the experimental results useful, please kindly cite the following paper:
