@@ -252,15 +252,18 @@ This project is licensed under the GPL License - see the [LICENSE](LICENSE) file
 ## Citation
 If you find the benchmark datasets, the OpenEA library or the experimental results useful, please kindly cite the following paper:
 ```
-@inproceedings{OpenEA,
-  author    = {Zequn Sun and 
-               Qingheng Zhang and 
-               Wei Hu and 
-               Chengming Wang and 
-               Muhao Chen and 
-               Farahnaz Akrami and 
-               Chengkai Li},
-  title     = {A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs},
-  year      = {2020}
+@techreport{OpenEA,
+  author       = {Zequn Sun and 
+                  Qingheng Zhang and 
+                  Wei Hu and 
+                  Chengming Wang and 
+                  Muhao Chen and 
+                  Farahnaz Akrami and 
+                  Chengkai Li},
+  title        = {A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs},
+  year         = {2020},
+  institution  = {Nanjing University},
+  url          = {https://github.com/nju-websoft/OpenEA/blob/master/docs/OpenEA_preprint.pdf}
 }
+
 ```
