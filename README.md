@@ -1,4 +1,4 @@
-# [A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs](https://github.com/nju-websoft/OpenEA/blob/master/docs/OpenEA_preprint.pdf)
+# [A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs](https://arxiv.org/abs/2003.07743)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/nju-websoft/OpenEA/issues)
 [![MIT license](https://img.shields.io/badge/License-GPL-lightgrey.svg?style=flat-square)](https://github.com/nju-websoft/OpenEA/blob/master/LICENSE)
 [![language-python3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
