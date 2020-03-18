@@ -263,7 +263,7 @@ If you find the benchmark datasets, the OpenEA library or the experimental resul
   title        = {A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs},
   year         = {2020},
   institution  = {Nanjing University},
-  url          = {https://github.com/nju-websoft/OpenEA/blob/master/docs/OpenEA_preprint.pdf}
+  url          = {https://arxiv.org/abs/2003.07743}
 }
 
 ```
