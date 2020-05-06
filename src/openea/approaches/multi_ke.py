@@ -340,9 +340,9 @@ class MultiKE(BasicModel):
 
     def _get_local_name_by_name_triple(self, name_attribute_list=None):
         if name_attribute_list is None:
-            if 'YG_en' in self.args.training_data:
+            if 'D_Y' in self.args.training_data:
                 name_attribute_list = {'skos:prefLabel', 'http://dbpedia.org/ontology/birthName'}
-            elif 'WD_en' in self.args.training_data:
+            elif 'D_W' in self.args.training_data:
                 name_attribute_list = {'http://www.wikidata.org/entity/P373', 'http://www.wikidata.org/entity/P1476'}
             else:
                 name_attribute_list = {}
