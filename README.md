@@ -125,7 +125,7 @@ python main_from_args.py "predefined_arguments" "dataset_name" "split"
 For example, if you want to run BootEA on D-W-15K (V1) using the first split, please execute the following script:
 
 ```bash
-python main_from_args.py ./args/bootea_args_15K.json DBP_en_WD_en_15K_V1 721_5fold/1/
+python main_from_args.py ./args/bootea_args_15K.json D_W_15K_V1 721_5fold/1/
 ```
 
 ## KG Sampling Method and Datasets
