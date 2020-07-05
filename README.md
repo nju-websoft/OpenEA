@@ -239,15 +239,6 @@ The detailed and supplementary experimental results are list as follows:
 #### Detailed results of unexplored KG embedding models on the 100K datasets
 [**detailed_results_unexplored_models_100K.csv**](https://github.com/nju-websoft/OpenEA/blob/master/docs/detailed_results_unexplored_models_100K.csv)
 
-### Comparison to Conventional Approaches
-We use the precision (P), recall (R) and F1-score (F1) as the evaluation metrics for this part. For embedding-based approaches, as the results is a list of candidates for every source entity, their precision, recall and F1-score are equal to Hits@1.
-
-#### Comparison with conventional approaches on the 15K datasets
-[**detailed_results_conventional_approaches_15K.csv**](https://github.com/nju-websoft/OpenEA/blob/master/docs/detailed_results_conventional_approaches_15K.csv)
-
-#### Comparison with conventional approaches on the 100K datasets
-[**detailed_results_conventional_approaches_100K.csv**](https://github.com/nju-websoft/OpenEA/blob/master/docs/detailed_results_conventional_approaches_100K.csv)
-
 ## License
 This project is licensed under the GPL License - see the [LICENSE](LICENSE) file for details
 
