@@ -375,7 +375,13 @@ class RDGCN(BasicModel):
             else:
                 name_attribute_list = {}
 
-        triples = self.kgs.kg1.local_attribute_triples_set | self.kgs.kg2.local_attribute_triples_set
+        local_triples = self.kgs.kg1.local_attribute_triples_set | self.kgs.kg2.local_attribute_triples_set
+        triples = list()
+        for h, a, v in local_triples:
+            v = v.strip('"')
+            if v.endswith('"@eng'):
+                v = v.rstrip('"@eng')
+            triples.append((h, a, v))
         id_ent_dict = {}
         for e, e_id in self.kgs.kg1.entities_id_dict.items():
             id_ent_dict[e_id] = e
