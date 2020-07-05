@@ -23,35 +23,35 @@ done
 args_folder="args/"
 echo "log folder: " "${log_folder}"
 
-training_data=('DBP_en_DBP_de_100K_V1' 'DBP_en_DBP_de_100K_V2' 'DBP_en_DBP_fr_100K_V1' 'DBP_en_DBP_fr_100K_V2'
-                 'DBP_en_WD_en_100K_V1' 'DBP_en_WD_en_100K_V2' 'DBP_en_YG_en_100K_V1' 'DBP_en_YG_en_100K_V2')
+training_data=('EN_DE_100K_V1' 'EN_DE_100K_V2' 'EN_FR_100K_V1' 'EN_FR_100K_V2'
+                 'D_W_100K_V1' 'D_W_100K_V2' 'D_Y_100K_V1' 'D_Y_100K_V2')
 if [[ ${data} == "dev1" ]]; then
-    training_data=('DBP_en_DBP_de_100K_V1')
+    training_data=('EN_DE_100K_V1')
 elif [[ ${data} == "dev2" ]]; then
-    training_data=('DBP_en_DBP_de_100K_V2')
+    training_data=('EN_DE_100K_V2')
 elif [[ ${data} == "de" ]]; then
-    training_data=('DBP_en_DBP_de_100K_V1' 'DBP_en_DBP_de_100K_V2')
+    training_data=('EN_DE_100K_V1' 'EN_DE_100K_V2')
 
 elif [[ ${data} == "frv1" ]]; then
-    training_data=('DBP_en_DBP_fr_100K_V1')
+    training_data=('EN_FR_100K_V1')
 elif [[ ${data} == "frv2" ]]; then
-    training_data=('DBP_en_DBP_fr_100K_V2')
+    training_data=('EN_FR_100K_V2')
 elif [[ ${data} == "fr" ]]; then
-    training_data=('DBP_en_DBP_fr_100K_V1' 'DBP_en_DBP_fr_100K_V2')
+    training_data=('EN_FR_100K_V1' 'EN_FR_100K_V2')
 
 elif [[ ${data} == "wdv1" ]]; then
-    training_data=('DBP_en_WD_en_100K_V1')
+    training_data=('D_W_100K_V1')
 elif [[ ${data} == "wdv2" ]]; then
-    training_data=('DBP_en_WD_en_100K_V2')
+    training_data=('D_W_100K_V2')
 elif [[ ${data} == "wd" ]]; then
-    training_data=('DBP_en_WD_en_100K_V1' 'DBP_en_WD_en_100K_V2')
+    training_data=('D_W_100K_V1' 'D_W_100K_V2')
 
 elif [[ ${data} == "ygv1" ]]; then
-    training_data=('DBP_en_YG_en_100K_V1')
+    training_data=('D_Y_100K_V1')
 elif [[ ${data} == "ygv2" ]]; then
-    training_data=('DBP_en_YG_en_100K_V2')
+    training_data=('D_Y_100K_V2')
 elif [[ ${data} == "yg" ]]; then
-    training_data=('DBP_en_YG_en_100K_V1' 'DBP_en_YG_en_100K_V2')
+    training_data=('D_Y_100K_V1' 'D_Y_100K_V2')
 fi
 echo "training data: " "${training_data[@]}"
 

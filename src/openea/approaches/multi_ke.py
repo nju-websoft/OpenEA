@@ -215,10 +215,13 @@ def clear_attribute_triples(attribute_triples):
     attribute_triples_new = []
     literals_number, literals_string = [], []
     for (e, a, v) in attribute_triples:
+        v = v.strip('"')
         if '"^^' in v:
             v = v[:v.index('"^^')]
         if v.endswith('"@en'):
             v = v[:v.index('"@en')]
+        if v.endswith('"@eng'):
+            v = v[:v.index('"@eng')]
         if is_number(v):
             literals_number.append(v)
         else:
@@ -347,7 +350,13 @@ class MultiKE(BasicModel):
             else:
                 name_attribute_list = {}
 
-        triples = self.kgs.kg1.local_attribute_triples_set | self.kgs.kg2.local_attribute_triples_set
+        local_triples = self.kgs.kg1.local_attribute_triples_set | self.kgs.kg2.local_attribute_triples_set
+        triples = list()
+        for h, a, v in local_triples:
+            v = v.strip('"')
+            if v.endswith('"@eng'):
+                v = v.rstrip('"@eng')
+            triples.append((h, a, v))
         id_ent_dict = {}
         for e, e_id in self.kgs.kg1.entities_id_dict.items():
             id_ent_dict[e_id] = e
