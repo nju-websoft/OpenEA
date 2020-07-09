@@ -133,7 +133,8 @@ class BasicModel:
         test(embeds1, embeds2, mapping, self.args.top_k, self.args.test_threads_num,
              metric=self.args.eval_metric, normalize=self.args.eval_norm, csls_k=self.args.csls, accurate=True)
         if save:
-            rd.save_results(self.out_folder, rest_12)
+            ent_ids_rest_12 = [(self.kgs.test_entities1[i], self.kgs.test_entities2[j]) for i, j in rest_12]
+            rd.save_results(self.out_folder, ent_ids_rest_12)
 
     def retest(self):
         dir = self.out_folder.split("/")

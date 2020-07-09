@@ -178,7 +178,8 @@ class Attr2Vec:
                                                        self.args.test_threads_num, metric=self.args.eval_metric,
                                                        csls_k=self.args.csls)
         if save:
-            read.save_results(self.out_folder, rest_12)
+            ent_ids_rest_12 = [(self.kgs.test_entities1[i], self.kgs.test_entities2[j]) for i, j in rest_12]
+            read.save_results(self.out_folder, ent_ids_rest_12)
 
     def run(self):
         training_data_list = generate_training_data(self.kgs, threshold=0.9)

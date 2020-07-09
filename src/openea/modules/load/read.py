@@ -56,7 +56,7 @@ def generate_sharing_id(train_links, kg1_triples, kg1_elements, kg2_triples, kg2
     return ids1, ids2
 
 
-def     generate_mapping_id(kg1_triples, kg1_elements, kg2_triples, kg2_elements, ordered=True):
+def generate_mapping_id(kg1_triples, kg1_elements, kg2_triples, kg2_elements, ordered=True):
     ids1, ids2 = dict(), dict()
     if ordered:
         kg1_ordered_elements, _ = sort_elements(kg1_triples, kg1_elements)
