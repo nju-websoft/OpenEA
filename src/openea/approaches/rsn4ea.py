@@ -192,22 +192,23 @@ class BasicSampler(object):
 
         rts = [hrt, rt_x]
         print('hrt', 'rt_x', len(hrt), len(rt_x))
-        # c_length = 5
-        # while c_length < opts.max_length:
-        #     curr = rtailkb.loc[rt_x[:, 1]]
-        #     print(len(curr), len(hrt[:, 0]))
-        #     curr.loc[:, 'pre'] = hrt[:, 0]
-        #
-        #     rt_x = curr.apply(perform_random2, axis=1)
-        #     rt_x = rtlist[np.concatenate(rt_x.values)]
-        #
-        #     rts.append(rt_x)
-        #     c_length += 2
+        c_length = 5
+        while c_length < opts.max_length:
+            curr = rtailkb.loc[rt_x[:, 1]]
+            print(len(curr), len(hrt[:, 0]))
+            curr.loc[:, 'pre'] = hrt[:, 0]
+
+            rt_x = curr.apply(perform_random2, axis=1)
+            rt_x = rtlist[np.concatenate(rt_x.values)]
+
+            rts.append(rt_x)
+            c_length += 2
 
         data = np.concatenate(rts, axis=1)
         data = pd.DataFrame(data)
 
         self._train_data = data
+        # print("save paths to:", '%spaths_%.1f_%.1f' % (opts.data_path, opts.alpha, opts.beta))
         # data.to_csv('%spaths_%.1f_%.1f' % (opts.data_path, opts.alpha, opts.beta))
 
 
