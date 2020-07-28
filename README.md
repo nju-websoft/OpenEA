@@ -1,8 +1,9 @@
-# [A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs](https://arxiv.org/abs/2003.07743)
+# [A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs](http://www.vldb.org/pvldb/vol13/p2326-sun.pdf)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/nju-websoft/OpenEA/issues)
-[![MIT license](https://img.shields.io/badge/License-GPL-lightgrey.svg?style=flat-square)](https://github.com/nju-websoft/OpenEA/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-GPL-lightgrey.svg?style=flat-square)](https://github.com/nju-websoft/OpenEA/blob/master/LICENSE)
 [![language-python3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
 [![made-with-Tensorflow](https://img.shields.io/badge/Made%20with-Tensorflow-orange.svg?style=flat-square)](https://www.tensorflow.org/)
+[![Paper](https://img.shields.io/badge/VLDB%202020-PDF-yellow.svg?style=flat-square)](http://www.vldb.org/pvldb/vol13/p2326-sun.pdf)
 
 > Entity alignment seeks to find entities in different knowledge graphs (KGs) that refer to the same real-world object. Recent advancement in KG embedding impels the advent of embedding-based entity alignment, which encodes entities in a continuous embedding space and measures entity similarities based on the learned embeddings. In this paper, we conduct a comprehensive experimental study of this emerging field. This study surveys 23 recent embedding-based entity alignment approaches and categorizes them based on their techniques and characteristics. We further observe that current approaches use different datasets in evaluation, and the degree distributions of entities in these datasets are inconsistent with real KGs. Hence, we propose a new KG sampling algorithm, with which we generate a set of dedicated benchmark datasets with various heterogeneity and distributions for a realistic evaluation. This study also produces an open-source library, which includes 12 representative embedding-based entity alignment approaches. We extensively evaluate these approaches on the generated datasets, to understand their strengths and limitations. Additionally, for several directions that have not been explored in current approaches, we perform exploratory experiments and report our preliminary findings for future studies. The benchmark datasets, open-source library and experimental results are all accessible online and will be duly maintained. 
 
@@ -254,10 +255,11 @@ If you find the benchmark datasets, the OpenEA library or the experimental resul
                Farahnaz Akrami and
                Chengkai Li},
   title     = {A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs},
-  journal   = {PVLDB},
+  journal   = {Proceedings of the VLDB Endowment},
   volume    = {13},
   number    = {11},
+  pages     = {2326--2340},
   year      = {2020},
-  url       = {https://arxiv.org/abs/2003.07743}
+  url       = {http://www.vldb.org/pvldb/vol13/p2326-sun.pdf}
 }
 ```
