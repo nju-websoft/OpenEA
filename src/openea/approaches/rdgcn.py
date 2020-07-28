@@ -466,7 +466,7 @@ class RDGCN(BasicModel):
 
         return word_em, e_desc_input, name_embeds
 
-    def trainning(self):
+    def training(self):
         neg_num = self.args.neg_triple_num
         train_num = len(self.kgs.train_links)
         train_links = np.array(self.kgs.train_links)
@@ -474,24 +474,24 @@ class RDGCN(BasicModel):
         neg_left = pos.reshape((train_num * neg_num,))
         pos = np.ones((train_num, neg_num)) * (train_links[:, 1].reshape((train_num, 1)))
         neg2_right = pos.reshape((train_num * neg_num,))
-        output = self.sess.run(self.output)
-        neg2_left = get_neg(train_links[:, 1], output, self.args.neg_triple_num)
-        neg_right = get_neg(train_links[:, 0], output, self.args.neg_triple_num)
-        self.feeddict = {"neg_left:0": neg_left,
-                         "neg_right:0": neg_right,
-                         "neg2_left:0": neg2_left,
-                         "neg2_right:0": neg2_right}
+        # output = self.sess.run(self.output)
+        # neg2_left = get_neg(train_links[:, 1], output, self.args.neg_triple_num)
+        # neg_right = get_neg(train_links[:, 0], output, self.args.neg_triple_num)
+        # self.feeddict = {"neg_left:0": neg_left,
+        #                  "neg_right:0": neg_right,
+        #                  "neg2_left:0": neg2_left,
+        #                  "neg2_right:0": neg2_right}
 
         for i in range(1, self.args.max_epoch + 1):
             start = time.time()
-            # if i % 10 == 1:
-                # output = self.sess.run(self.output)
-                # neg2_left = get_neg(train_links[:, 1], output, self.args.neg_triple_num)
-                # neg_right = get_neg(train_links[:, 0], output, self.args.neg_triple_num)
-                # self.feeddict = {"neg_left:0": neg_left,
-                #                  "neg_right:0": neg_right,
-                #                  "neg2_left:0": neg2_left,
-                #                  "neg2_right:0": neg2_right}
+            if i % 10 == 1:
+                output = self.sess.run(self.output)
+                neg2_left = get_neg(train_links[:, 1], output, self.args.neg_triple_num)
+                neg_right = get_neg(train_links[:, 0], output, self.args.neg_triple_num)
+                self.feeddict = {"neg_left:0": neg_left,
+                                 "neg_right:0": neg_right,
+                                 "neg2_left:0": neg2_left,
+                                 "neg2_right:0": neg2_right}
 
             _, batch_loss = self.sess.run([self.optimizer, self.loss], feed_dict=self.feeddict)
             print('epoch {}, avg. relation triple loss: {:.4f}, cost time: {:.4f}s'.format(i, batch_loss,
@@ -532,6 +532,6 @@ class RDGCN(BasicModel):
 
     def run(self):
         t = time.time()
-        self.trainning()
-        print("trainning finish")
+        self.training()
+        print("training finish")
         print("Training ends. Total time = {:.3f} s.".format(time.time() - t))
