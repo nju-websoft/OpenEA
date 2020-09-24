@@ -4,3 +4,4 @@ scikit-learn
 numpy
 gensim
 python-Levenshtein
+scipy

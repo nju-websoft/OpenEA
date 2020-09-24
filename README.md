@@ -7,6 +7,10 @@
 
 > Entity alignment seeks to find entities in different knowledge graphs (KGs) that refer to the same real-world object. Recent advancement in KG embedding impels the advent of embedding-based entity alignment, which encodes entities in a continuous embedding space and measures entity similarities based on the learned embeddings. In this paper, we conduct a comprehensive experimental study of this emerging field. This study surveys 23 recent embedding-based entity alignment approaches and categorizes them based on their techniques and characteristics. We further observe that current approaches use different datasets in evaluation, and the degree distributions of entities in these datasets are inconsistent with real KGs. Hence, we propose a new KG sampling algorithm, with which we generate a set of dedicated benchmark datasets with various heterogeneity and distributions for a realistic evaluation. This study also produces an open-source library, which includes 12 representative embedding-based entity alignment approaches. We extensively evaluate these approaches on the generated datasets, to understand their strengths and limitations. Additionally, for several directions that have not been explored in current approaches, we perform exploratory experiments and report our preliminary findings for future studies. The benchmark datasets, open-source library and experimental results are all accessible online and will be duly maintained. 
 
+*** **New Features** ***
+
+- Sep. 24, 2020: add AliNet (its results on OpenEA datasets are coming soon)
+
 ## Table of contents
 1. [Library for Embedding-based Entity Alignment](#library-for-embedding-based-entity-alignment)
     1. [Overview](#overview)
@@ -54,6 +58,7 @@ The design goals and features of OpenEA include three aspects, i.e., loose coupl
     1. **RSN4EA**: [Learning to Exploit Long-term Relational Dependencies in Knowledge Graphs](http://proceedings.mlr.press/v97/guo19c/guo19c.pdf). ICML 2019.
     1. **MultiKE**: [Multi-view Knowledge Graph Embedding for Entity Alignment](https://www.ijcai.org/proceedings/2019/0754.pdf). IJCAI 2019.
     1. **RDGCN**: [Relation-Aware Entity Alignment for Heterogeneous Knowledge Graphs](https://www.ijcai.org/proceedings/2019/0733.pdf). IJCAI 2019.
+    1. **AliNet**: [Knowledge Graph Alignment Network with Gated Multi-hop Neighborhood Aggregation](https://aaai.org/ojs/index.php/AAAI/article/view/5354). AAAI 2020.
     
 * OpenEA has also integrated the following relationship embedding models and two attribute embedding models (AC2Vec and Label2vec ) in the embedding module:
     1. **TransH**: [Knowledge Graph Embedding by Translating on Hyperplanes](https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8531/8546). AAAI 2014.

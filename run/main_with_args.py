@@ -25,13 +25,14 @@ from openea.approaches import KDCoE
 from openea.approaches import SEA
 from openea.approaches import RSN4EA
 from openea.approaches import RDGCN
+from openea.approaches import AliNet
 
 parser = argparse.ArgumentParser(description='OpenEA')
-parser.add_argument('--training_data', type=str, default='../../datasets/DBPWY/DBP15K/zh_en/mtranse/')
-parser.add_argument('--output', type=str, default='../../output/DBPWY_results/')
-parser.add_argument('--dataset_division', type=str, default='0_3/')
+parser.add_argument('--training_data', type=str, default='../../datasets/EN_DE_15K_V1/')
+parser.add_argument('--output', type=str, default='../../output/results/')
+parser.add_argument('--dataset_division', type=str, default='721_5fold/1/')
 
-parser.add_argument('--embedding_module', type=str, default='SEA',
+parser.add_argument('--embedding_module', type=str, default='AliNet',
                     choices=['BasicModel',
                              'TransE', 'TransD', 'TransH', 'TransR',
                              'DistMult', 'HolE', 'SimplE', 'RotatE', 'ProjE', 'ConvE', 'SEA', 'RSN4EA',
@@ -47,19 +48,19 @@ parser.add_argument('--dim', type=int, default=300)
 parser.add_argument('--loss_norm', type=str, default='L2')
 parser.add_argument('--ent_l2_norm', type=bool, default=True)
 parser.add_argument('--rel_l2_norm', type=bool, default=True)
-parser.add_argument('--batch_size', type=int, default=5000)
+parser.add_argument('--batch_size', type=int, default=3000)
 
 parser.add_argument('--margin', type=float, default=1.5)
-parser.add_argument('--pos_margin', type=float, default=0.1)
-parser.add_argument('--neg_margin', type=float, default=1.2)
-parser.add_argument('--neg_margin_balance', type=float, default=1.0)
+parser.add_argument('--pos_margin', type=float, default=0)
+parser.add_argument('--neg_margin', type=float, default=1.5)
+parser.add_argument('--neg_margin_balance', type=float, default=0.1)
 
-parser.add_argument('--neg_triple_num', type=int, default=125)
-parser.add_argument('--truncated_epsilon', type=float, default=0.95)
+parser.add_argument('--neg_triple_num', type=int, default=10)
+parser.add_argument('--truncated_epsilon', type=float, default=0.98)
 parser.add_argument('--truncated_freq', type=int, default=10)
 
 parser.add_argument('--learning_rate', type=float, default=0.001)
-parser.add_argument('--optimizer', type=str, default='Adagrad', choices=['Adagrad', 'Adadelta', 'Adam', 'SGD'])
+parser.add_argument('--optimizer', type=str, default='Adam', choices=['Adagrad', 'Adadelta', 'Adam', 'SGD'])
 parser.add_argument('--batch_threads_num', type=int, default=4)
 parser.add_argument('--test_threads_num', type=int, default=12)
 parser.add_argument('--max_epoch', type=int, default=1000)
@@ -73,14 +74,14 @@ parser.add_argument('--is_save', type=bool, default=True)
 parser.add_argument('--eval_norm', type=bool, default=True)
 parser.add_argument('--start_valid', type=int, default=0)
 parser.add_argument('--stop_metric', type=str, default='mrr', choices=['hits1', 'mrr'])
-parser.add_argument('--eval_metric', type=str, default='manhattan', choices=['inner', 'cosine', 'euclidean', 'manhattan'])
+parser.add_argument('--eval_metric', type=str, default='inner', choices=['inner', 'cosine', 'euclidean', 'manhattan'])
 
 parser.add_argument('--rnn_layer_num', type=int, default=2)
-parser.add_argument('--output_keep_prob', type=float, default=0.7)  # dropout
+parser.add_argument('--output_keep_prob', type=float, default=0.5)  # dropout
 parser.add_argument('--dnn_neg_nums', type=int, default=1024)  # negative sampling
 parser.add_argument('--filter_num', type=int, default=32)  # number of filters
 
-parser.add_argument('--sim_th', type=int, default=0.7)  # For bootstrapping
+parser.add_argument('--sim_th', type=float, default=0.5)  # For bootstrapping
 parser.add_argument('--k', type=int, default=10)  # For bootstrapping
 
 parser.add_argument('--likelihood_slice', type=int, default=1000)  # For BootEA likelihood matrix
@@ -154,12 +155,18 @@ parser.add_argument("--retrain_literal_embeds", type=bool, default=True)
 parser.add_argument("--literal_normalize", type=bool, default=True)
 parser.add_argument("--encoder_active", type=str, default="thah")
 
-
 parser.add_argument("--desc_batch_size", type=int, default=512)  # For KDCoE
 parser.add_argument("--wv_dim", type=int, default=300)  # For KDCoE
 parser.add_argument("--default_desc_length", type=int, default=4)  # For KDCoE
 parser.add_argument("--word_embed", type=str, default="../../datasets/wiki-news-300d-1M.vec")  # For KDCoE
 parser.add_argument("--desc_sim_th", type=int, default=0.99)  # For KDCoE
+
+parser.add_argument('--adj_number', type=int, default=1)  # For AliNet
+parser.add_argument('--layer_dims', type=list, default=[500, 400, 300])  # For AliNet
+parser.add_argument('--min_rel_win', type=int, default=15)  # For AliNet
+parser.add_argument('--start_augment', type=int, default=2)  # For AliNet
+parser.add_argument('--rel_param', type=float, default=0.01)  # For AliNet
+parser.add_argument('--num_features_nonzero', type=float, default=0.0)  # For AliNet
 
 args = parser.parse_args()
 print(args)
@@ -197,6 +204,7 @@ class ModelFamily(object):
     GMNN = GMNN
     KDCoE = KDCoE
     RDGCN = RDGCN
+    AliNet = AliNet
 
 
 def get_model(model_name):

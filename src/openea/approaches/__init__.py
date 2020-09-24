@@ -15,3 +15,4 @@ from openea.approaches.kdcoe import KDCoE
 from openea.approaches.rdgcn import RDGCN
 from openea.approaches.bootea_rotate import BootEA_RotatE
 from openea.approaches.bootea_transh import BootEA_TransH
+from openea.approaches.alinet import AliNet
