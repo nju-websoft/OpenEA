@@ -14,11 +14,11 @@ import scipy.sparse as sp
 from scipy.sparse.linalg.eigen.arpack import eigsh
 from openea.modules.utils.util import generate_out_folder
 
-from src.openea.modules.bootstrapping.alignment_finder import find_alignment
-from src.openea.modules.finding.alignment import greedy_alignment
-from src.openea.modules.utils.util import task_divide, merge_dic
-from src.openea.modules.finding.similarity import sim
-from src.openea.modules.finding.evaluation import early_stop
+from openea.modules.bootstrapping.alignment_finder import find_alignment
+from openea.modules.finding.alignment import greedy_alignment
+from openea.modules.utils.util import task_divide, merge_dic
+from openea.modules.finding.similarity import sim
+from openea.modules.finding.evaluation import early_stop
 import openea.modules.load.read as rd
 from openea.models.basic_model import BasicModel
 
