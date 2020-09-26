@@ -86,7 +86,7 @@ src/
 
 #### Dependencies
 * Python 3.x (tested on Python 3.6)
-* Tensorflow 1.x (tested on Tensorflow 1.8)
+* Tensorflow 1.x (tested on Tensorflow 1.8 and 1.12)
 * Scipy
 * Numpy
 * Graph-tool or igraph or NetworkX
@@ -96,7 +96,16 @@ src/
 * Gensim
 
 #### Installation
-OpenEA can be installed using pip with the following steps:
+We recommend creating a new conda environment to install and run OpenEA. You should first install tensorflow-gpu (tested on 1.8 and 1.12), graph-tool (tested on 2.27 and 2.29,  the latest version would cause a bug), and python-igraph using conda:
+```bash
+conda create -n openea python=3.6
+conda activate openea
+conda install tensorflow-gpu==1.12
+conda install -c conda-forge graph-tool==2.29
+conda install -c conda-forge python-igraph
+```
+
+Then, OpenEA can be installed using pip with the following steps:
 
 ```bash
 git clone https://github.com/nju-websoft/OpenEA.git OpenEA

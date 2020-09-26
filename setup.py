@@ -11,10 +11,13 @@ META_PATH = os.path.join('src', MODULE, '__init__.py')
 KEYWORDS = ['Knowledge Graph', 'Embeddings', 'Entity Alignment']
 INSTALL_REQUIRES = [
     # 'tensorflow',
-    'python-igraph',
+    'pandas==0.24.2',
+    'matching==0.1.1',
+    'scikit-learn',
     'numpy',
+    'gensim',
+    'python-Levenshtein',
     'scipy',
-    'pandas',
 ]
 
 if __name__ == '__main__':
