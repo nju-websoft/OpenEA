@@ -53,7 +53,7 @@ def generate_pos_triples(triples, batch_size, step, is_fixed_size=False):
     pos_batch = triples[start: end]
     # pos_batch = random.sample(triples, batch_size)
     if is_fixed_size and len(pos_batch) < batch_size:
-        pos_batch += triples[:batch_size-len(pos_batch)]
+        pos_batch += triples[:batch_size - len(pos_batch)]
     return pos_batch
 
 
@@ -140,6 +140,18 @@ def generate_neighbours(entity_embeds, entity_list, neighbors_num, threads_num):
     del results
     gc.collect()
     return dic
+
+
+def generate_neighbours_single_thread(entity_embeds, entity_list, neighbors_num, threads_num):
+    ent_frags = task_divide(np.array(entity_list), threads_num)
+    ent_frag_indexes = task_divide(np.array(range(len(entity_list))), threads_num)
+    results = dict()
+    for i in range(len(ent_frags)):
+        dic = find_neighbours(ent_frags[i], np.array(entity_list),
+                              entity_embeds[ent_frag_indexes[i], :],
+                              entity_embeds, neighbors_num)
+        results = merge_dic(results, dic)
+    return results
 
 
 def find_neighbours(frags, entity_list, sub_embed, embed, k):

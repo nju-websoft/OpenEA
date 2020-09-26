@@ -195,7 +195,8 @@ class BootEA(AlignE):
         prs = tf.nn.embedding_lookup(self.rel_embeds, self.new_r)
         pts = tf.nn.embedding_lookup(self.ent_embeds, self.new_t)
         self.alignment_loss = - tf.reduce_sum(tf.log(tf.sigmoid(-tf.reduce_sum(tf.pow(phs + prs - pts, 2), 1))))
-        self.alignment_optimizer = generate_optimizer(self.alignment_loss, self.args.learning_rate, opt=self.args.optimizer)
+        self.alignment_optimizer = generate_optimizer(self.alignment_loss, self.args.learning_rate,
+                                                      opt=self.args.optimizer)
 
     def _define_likelihood_graph(self):
         self.entities1 = tf.placeholder(tf.int32, shape=[None])
@@ -207,7 +208,8 @@ class BootEA(AlignE):
         ent2_embed = tf.nn.embedding_lookup(self.ent_embeds, self.entities2)
         mat = tf.log(tf.sigmoid(tf.matmul(ent1_embed, ent2_embed, transpose_b=True)))
         self.likelihood_loss = -tf.reduce_sum(tf.multiply(mat, self.likelihood_mat))
-        self.likelihood_optimizer = generate_optimizer(self.likelihood_loss, self.args.learning_rate, opt=self.args.optimizer)
+        self.likelihood_optimizer = generate_optimizer(self.likelihood_loss, self.args.learning_rate,
+                                                       opt=self.args.optimizer)
 
     def eval_ref_sim_mat(self):
         refs1_embeddings = tf.nn.embedding_lookup(self.ent_embeds, self.ref_ent1)
@@ -277,7 +279,8 @@ class BootEA(AlignE):
         iter_nums = self.args.max_epoch // sub_num
         for i in range(1, iter_nums + 1):
             print("\niteration", i)
-            self.launch_training_k_epo(i, sub_num, triple_steps, steps_tasks, training_batch_queue, neighbors1, neighbors2)
+            self.launch_training_k_epo(i, sub_num, triple_steps, steps_tasks, training_batch_queue, neighbors1,
+                                       neighbors2)
             if i * sub_num >= self.args.start_valid:
                 flag = self.valid(self.args.stop_metric)
                 self.flag1, self.flag2, self.early_stop = early_stop(self.flag1, self.flag2, flag)
@@ -297,12 +300,18 @@ class BootEA(AlignE):
             if neighbors1 is not None:
                 del neighbors1, neighbors2
             gc.collect()
-            neighbors1 = bat.generate_neighbours(self.eval_kg1_useful_ent_embeddings(),
-                                                 self.kgs.useful_entities_list1,
-                                                 neighbors_num1, self.args.batch_threads_num)
-            neighbors2 = bat.generate_neighbours(self.eval_kg2_useful_ent_embeddings(),
-                                                 self.kgs.useful_entities_list2,
-                                                 neighbors_num2, self.args.batch_threads_num)
+            # neighbors1 = bat.generate_neighbours(self.eval_kg1_useful_ent_embeddings(),
+            #                                      self.kgs.useful_entities_list1,
+            #                                      neighbors_num1, self.args.batch_threads_num)
+            # neighbors2 = bat.generate_neighbours(self.eval_kg2_useful_ent_embeddings(),
+            #                                      self.kgs.useful_entities_list2,
+            #                                      neighbors_num2, self.args.batch_threads_num)
+            neighbors1 = bat.generate_neighbours_single_thread(self.eval_kg1_useful_ent_embeddings(),
+                                                               self.kgs.useful_entities_list1,
+                                                               neighbors_num1, self.args.batch_threads_num)
+            neighbors2 = bat.generate_neighbours_single_thread(self.eval_kg2_useful_ent_embeddings(),
+                                                               self.kgs.useful_entities_list2,
+                                                               neighbors_num2, self.args.batch_threads_num)
             ent_num = len(self.kgs.kg1.entities_list) + len(self.kgs.kg2.entities_list)
             print("generating neighbors of {} entities costs {:.3f} s.".format(ent_num, time.time() - t1))
         print("Training ends. Total time = {:.3f} s.".format(time.time() - t))
