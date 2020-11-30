@@ -9,6 +9,8 @@
 
 *** **New Features** ***
 
+- Nov. 30, 2020: We release **a new version (v2.0) of the OpenEA dataset**, where the URIs of DBpedia and YAGO entities are encoded to resovle the [name bias](https://www.aclweb.org/anthology/2020.emnlp-main.515.pdf) issue. It is strongly recommended to use the [v2.0 dataset](https://www.dropbox.com/s/xfehqm4pcd9yw0v/OpenEA_dataset_v2.0.zip?dl=0) for evaluating attribute-based entity alignment methods, such that the results can better reflect the robustness of these methods in real-world situation.
+
 - Sep. 24, 2020: add AliNet (its results on OpenEA datasets are coming soon)
 
 ## Table of contents
@@ -164,7 +166,9 @@ We choose three well-known KGs as our sources: DBpedia (2016-10),Wikidata (20160
 100K | Cross-lingual | EN-FR-100K, EN-DE-100K
 100K | English-lingual | D-W-100K, D-Y-100K
 
-The datasets can be downloaded from [Dropbox](https://www.dropbox.com/s/nzjxbam47f9yk3d/OpenEA_dataset_v1.1.zip?dl=0) or [Baidu Wangpan](https://pan.baidu.com/s/1Wb4xMds3PT0IaKCJrPR8Lw) (password: 9feb). 
+The v1.1 datasets used in this paper can be downloaded from [Dropbox](https://www.dropbox.com/s/nzjxbam47f9yk3d/OpenEA_dataset_v1.1.zip?dl=0) or [Baidu Wangpan](https://pan.baidu.com/s/1Wb4xMds3PT0IaKCJrPR8Lw) (password: 9feb). 
+
+(**Recommended**) The v2.0 datasets can be downloaded from [Dropbox](https://www.dropbox.com/s/xfehqm4pcd9yw0v/OpenEA_dataset_v2.0.zip?dl=0) or [Baidu Wangpan](https://pan.baidu.com/s/19RlM9OqwhIz4Lnogrp74tg) (password: nub1). 
 
 **Note that**, we have updated the datasets by fixing a minor format issue in YAGO. Please re-download our datasets from the above links and use this version for evaluation.
 
