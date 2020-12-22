@@ -64,14 +64,12 @@ def get_sparse_tensor(triple_list, ent_num):
     pos, degree = get_mat(triple_list, ent_num)
     ind = []
     val = []
-    M_arr = np.zeros((ent_num, ent_num))
     for fir, sec in pos:
         ind.append((sec, fir))
         val.append(pos[(fir, sec)] / math.sqrt(degree[fir]) / math.sqrt(degree[sec]))
-        M_arr[fir][sec] = 1.0
     pos = tf.SparseTensor(indices=ind, values=val, dense_shape=[ent_num, ent_num])
 
-    return pos, M_arr
+    return pos
 
 
 def get_neg(ILL, output_layer, k):
@@ -180,7 +178,6 @@ class Layer:
         self.tail_r = None
         self.r_mat = None
         self.M = None
-        self.M_arr = None
         self.adj = None
         self.pretrianed_embedding = embedding
 
@@ -321,7 +318,7 @@ class Layer:
         tf.reset_default_graph()
         # primal_X_0 = self.get_input_layer()
         primal_X_0 = self.get_pretrained_input(self.pretrianed_embedding)
-        self.M, self.M_arr = get_sparse_tensor(self.triple_list, self.ent_num)
+        self.M = get_sparse_tensor(self.triple_list, self.ent_num)
         self.head, self.tail, self.head_r, self.tail_r, self.r_mat = rfunc(self.triple_list, self.ent_num, self.rel_num)
         dual_X_1, dual_A_1 = self.get_dual_input(primal_X_0)
         dual_H_1 = self.add_self_att_layer(dual_X_1, dual_A_1)
