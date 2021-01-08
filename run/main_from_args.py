@@ -31,6 +31,7 @@ from openea.approaches import KDCoE
 from openea.approaches import RDGCN
 from openea.approaches import BootEA_RotatE
 from openea.approaches import BootEA_TransH
+from openea.approaches import AliNet
 from openea.models.basic_model import BasicModel
 
 
@@ -68,6 +69,7 @@ class ModelFamily(object):
     RDGCN = RDGCN
     BootEA_RotatE = BootEA_RotatE
     BootEA_TransH = BootEA_TransH
+    AliNet = AliNet
 
 
 def get_model(model_name):
