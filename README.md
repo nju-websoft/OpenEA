@@ -7,11 +7,13 @@
 
 > Entity alignment seeks to find entities in different knowledge graphs (KGs) that refer to the same real-world object. Recent advancement in KG embedding impels the advent of embedding-based entity alignment, which encodes entities in a continuous embedding space and measures entity similarities based on the learned embeddings. In this paper, we conduct a comprehensive experimental study of this emerging field. This study surveys 23 recent embedding-based entity alignment approaches and categorizes them based on their techniques and characteristics. We further observe that current approaches use different datasets in evaluation, and the degree distributions of entities in these datasets are inconsistent with real KGs. Hence, we propose a new KG sampling algorithm, with which we generate a set of dedicated benchmark datasets with various heterogeneity and distributions for a realistic evaluation. This study also produces an open-source library, which includes 12 representative embedding-based entity alignment approaches. We extensively evaluate these approaches on the generated datasets, to understand their strengths and limitations. Additionally, for several directions that have not been explored in current approaches, we perform exploratory experiments and report our preliminary findings for future studies. The benchmark datasets, open-source library and experimental results are all accessible online and will be duly maintained. 
 
-*** **New Features** ***
+*** **UPDATE** ***
+
+- Jan. 8, 2021: The results of AliNet on 15K datasets are avaliable at [Google docs](https://docs.google.com/spreadsheets/d/1P_MX8V7zOlZjhHlEMiXbXlIaMGSJT1Gh_gZWe4yIQBY/edit?usp=sharing).
 
 - Nov. 30, 2020: We release **a new version (v2.0) of the OpenEA dataset**, where the URIs of DBpedia and YAGO entities are encoded to resovle the [name bias](https://www.aclweb.org/anthology/2020.emnlp-main.515.pdf) issue. It is strongly recommended to use the [v2.0 dataset](https://www.dropbox.com/s/xfehqm4pcd9yw0v/OpenEA_dataset_v2.0.zip?dl=0) for evaluating attribute-based entity alignment methods, such that the results can better reflect the robustness of these methods in real-world situation.
 
-- Sep. 24, 2020: add AliNet (its results on OpenEA datasets are coming soon)
+- Sep. 24, 2020: add AliNet.
 
 ## Table of contents
 1. [Library for Embedding-based Entity Alignment](#library-for-embedding-based-entity-alignment)
