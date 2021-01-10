@@ -120,10 +120,8 @@ def sim_multi_blocks(embeds1, embeds2, blocks_num=16):
     num = embeds1.shape[0]
     idx_list = task_divide(np.array(range(num)), blocks_num)
     sim_list = []
-    for task in idx_list:
-        print(len(task))
-        res = np.matmul(embeds1[task, :], embeds2.T)
-        print(res.shape)
+    for idx in idx_list:
+        res = np.matmul(embeds1[idx, :], embeds2.T)
         sim_list.append(res)
     sim_mat = np.concatenate(sim_list, axis=0)
     return sim_mat
