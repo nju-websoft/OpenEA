@@ -1,8 +1,10 @@
 import gc
+import itertools
 import multiprocessing
 import time
 
 import numpy as np
+import tensorflow as tf
 
 from openea.modules.finding.similarity import sim
 from openea.modules.utils.util import task_divide, merge_dic
@@ -220,3 +222,36 @@ def galeshapley(suitor_pref_dict, reviewer_pref_dict, max_iteration):
                     suitor_pref_dict[s].remove(r)
         suitors = list(set(suitor_pref_dict.keys()) - set(matching.keys()))
     return matching
+
+
+def retrieve_topk_alignment(kg1_source_ents, kg1_embeddings, kg2_candidates, kg2_embeddings, session, k=1,
+                            metric='inner', normalize=False, csls_k=0, output_path=None):
+
+    def search_nearest_k(sim_mat, k):
+        assert k > 0
+        neighbors = list()
+        num = sim_mat.shape[0]
+        for i in range(num):
+            rank = np.argpartition(-sim_mat[i, :], k)
+            pairs = [j for j in itertools.product([i], rank[0:k])]
+            neighbors.extend(pairs)
+        assert len(neighbors) == num * k
+        return neighbors
+
+    def triple_writer(triples, output_path, separator="\t", linebreak="\n"):
+        file = open(output_path, 'w', encoding='utf8')
+        for s, p, o in triples:
+            file.write(str(s) + separator + str(p) + separator + str(o) + linebreak)
+        file.close()
+        print(output_path, "saved")
+
+    embeds1 = tf.nn.embedding_lookup(kg1_embeddings, kg1_source_ents).eval(session=session)
+    embeds2 = tf.nn.embedding_lookup(kg2_embeddings, kg2_candidates).eval(session=session)
+    sim_mat = sim(embeds1, embeds2, metric=metric, normalize=normalize, csls_k=csls_k)
+    topk_neighbors = search_nearest_k(sim_mat, k)
+    topk_neighbors_w_sim = [(kg1_source_ents[i], kg2_candidates[j], sim_mat[i, j]) for i, j in topk_neighbors]
+
+    if output_path is not None:
+        triple_writer(topk_neighbors_w_sim, output_path)
+
+    return topk_neighbors_w_sim
