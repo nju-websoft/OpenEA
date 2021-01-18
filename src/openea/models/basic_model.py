@@ -11,6 +11,7 @@ import os
 import openea.modules.load.read as rd
 import openea.modules.train.batch as bat
 from openea.modules.finding.evaluation import valid, test, early_stop
+from openea.modules.finding.similarity import sim
 from openea.modules.utils.util import generate_out_folder
 from openea.modules.utils.util import load_session
 from openea.modules.utils.util import task_divide
@@ -281,3 +282,77 @@ class BasicModel:
                 print("\ngenerating neighbors of {} entities costs {:.3f} s.".format(ent_num, time.time() - t1))
                 gc.collect()
         print("Training ends. Total time = {:.3f} s.".format(time.time() - t))
+
+    def predict(self, top_k=1, min_sim_value=None, output_path=None):
+        """
+        Compute pairwise similarity between the two collections of embeddings.
+        Parameters
+        ----------
+        top_k : int
+            The k for top k retrieval, can be None (but then min_sim_value should be set).
+        min_sim_value : float, optional
+            the minimum value for the confidence.
+        output_path : str, optional
+            The path to write the output file. It is formatted as tsv file with entity1, entity2, confidence.
+        Returns
+        -------
+        topk_neighbors_w_sim : A list of tuples of form (entity1, entity2, confidence)
+        """
+        embeds1 = tf.nn.embedding_lookup(self.ent_embeds, self.kgs.kg1.entities_list).eval(session=self.session)
+        embeds2 = tf.nn.embedding_lookup(self.ent_embeds, self.kgs.kg2.entities_list).eval(session=self.session)
+        
+        print('len: ' + str(len(embeds1)))
+        print('entities_list: ' + str(len(self.kgs.kg1.entities_list)))
+        print('min: ' + str(min(self.kgs.kg1.entities_list)))
+        print('max: ' + str(max(self.kgs.kg1.entities_list)))
+        #print(self.kgs.kg1.entities_list)
+        
+        if self.mapping_mat:
+            embeds1 = np.matmul(embeds1, self.mapping_mat.eval(session=self.session))
+
+        sim_mat = sim(embeds1, embeds2, metric=self.args.eval_metric, normalize=self.args.eval_norm, csls_k=0)
+        
+        # search for correspondences which match top_k and/or min_sim_value
+        matched_entities_indexes = set()
+        if top_k:
+            assert top_k > 0
+            # top k for entities in kg1
+            for i in range(sim_mat.shape[0]):
+                for rank_index in np.argpartition(-sim_mat[i, :], top_k)[:top_k]:
+                    matched_entities_indexes.add((i, rank_index))
+
+            # top k for entities in kg2
+            for i in range(sim_mat.shape[1]):
+                for rank_index in np.argpartition(-sim_mat[:, i], top_k)[:top_k]:
+                    matched_entities_indexes.add((rank_index, i))
+
+            if min_sim_value:
+                matched_entities_indexes.intersection(map(tuple, np.argwhere(sim_mat > min_sim_value)))
+        elif min_sim_value:
+            matched_entities_indexes = set(map(tuple, np.argwhere(sim_mat > min_sim_value)))
+        else:
+            raise ValueError("Either top_k or min_sim_value should have a value")
+        
+        #build id to URI map:
+        kg1_id_to_uri = {v: k for k, v in self.kgs.kg1.entities_id_dict.items()}
+        kg2_id_to_uri = {v: k for k, v in self.kgs.kg2.entities_id_dict.items()}
+        
+        print(min(kg1_id_to_uri.keys()))
+        print(max(kg1_id_to_uri.keys()))
+        
+        topk_neighbors_w_sim = [(kg1_id_to_uri[self.kgs.kg1.entities_list[i]],
+                    kg2_id_to_uri[self.kgs.kg2.entities_list[j]], 
+                    sim_mat[i, j]) for i, j in matched_entities_indexes]
+        
+        if output_path is not None:
+            #create dir if not existent
+            directory = os.path.dirname(output_path)
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            file = open(output_path, 'w', encoding='utf8')
+            for s, p, o in topk_neighbors_w_sim:
+                file.write(str(s) + "\t" + str(p) + "\t" + str(o) + "\n")
+            file.close()
+            print(output_path, "saved")
+
+        return topk_neighbors_w_sim
