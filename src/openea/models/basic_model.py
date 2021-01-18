@@ -300,18 +300,12 @@ class BasicModel:
         """
         embeds1 = tf.nn.embedding_lookup(self.ent_embeds, self.kgs.kg1.entities_list).eval(session=self.session)
         embeds2 = tf.nn.embedding_lookup(self.ent_embeds, self.kgs.kg2.entities_list).eval(session=self.session)
-        
-        print('len: ' + str(len(embeds1)))
-        print('entities_list: ' + str(len(self.kgs.kg1.entities_list)))
-        print('min: ' + str(min(self.kgs.kg1.entities_list)))
-        print('max: ' + str(max(self.kgs.kg1.entities_list)))
-        #print(self.kgs.kg1.entities_list)
-        
+
         if self.mapping_mat:
             embeds1 = np.matmul(embeds1, self.mapping_mat.eval(session=self.session))
 
         sim_mat = sim(embeds1, embeds2, metric=self.args.eval_metric, normalize=self.args.eval_norm, csls_k=0)
-        
+
         # search for correspondences which match top_k and/or min_sim_value
         matched_entities_indexes = set()
         if top_k:
@@ -332,18 +326,15 @@ class BasicModel:
             matched_entities_indexes = set(map(tuple, np.argwhere(sim_mat > min_sim_value)))
         else:
             raise ValueError("Either top_k or min_sim_value should have a value")
-        
+
         #build id to URI map:
         kg1_id_to_uri = {v: k for k, v in self.kgs.kg1.entities_id_dict.items()}
         kg2_id_to_uri = {v: k for k, v in self.kgs.kg2.entities_id_dict.items()}
-        
-        print(min(kg1_id_to_uri.keys()))
-        print(max(kg1_id_to_uri.keys()))
-        
+
         topk_neighbors_w_sim = [(kg1_id_to_uri[self.kgs.kg1.entities_list[i]],
-                    kg2_id_to_uri[self.kgs.kg2.entities_list[j]], 
+                    kg2_id_to_uri[self.kgs.kg2.entities_list[j]],
                     sim_mat[i, j]) for i, j in matched_entities_indexes]
-        
+
         if output_path is not None:
             #create dir if not existent
             directory = os.path.dirname(output_path)
