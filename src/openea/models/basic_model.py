@@ -283,7 +283,7 @@ class BasicModel:
                 gc.collect()
         print("Training ends. Total time = {:.3f} s.".format(time.time() - t))
 
-    def predict(self, top_k=1, min_sim_value=None, output_path=None):
+    def predict(self, top_k=1, min_sim_value=None, output_file_name=None):
         """
         Compute pairwise similarity between the two collections of embeddings.
         Parameters
@@ -292,8 +292,8 @@ class BasicModel:
             The k for top k retrieval, can be None (but then min_sim_value should be set).
         min_sim_value : float, optional
             the minimum value for the confidence.
-        output_path : str, optional
-            The path to write the output file. It is formatted as tsv file with entity1, entity2, confidence.
+        output_file_name : str, optional
+            The name of the output file. It is formatted as tsv file with entity1, entity2, confidence.
         Returns
         -------
         topk_neighbors_w_sim : A list of tuples of form (entity1, entity2, confidence)
@@ -335,15 +335,73 @@ class BasicModel:
                     kg2_id_to_uri[self.kgs.kg2.entities_list[j]],
                     sim_mat[i, j]) for i, j in matched_entities_indexes]
 
-        if output_path is not None:
+        if output_file_name is not None:
             #create dir if not existent
-            directory = os.path.dirname(output_path)
-            if not os.path.exists(directory):
-                os.makedirs(directory)
-            file = open(output_path, 'w', encoding='utf8')
-            for s, p, o in topk_neighbors_w_sim:
-                file.write(str(s) + "\t" + str(p) + "\t" + str(o) + "\n")
-            file.close()
-            print(output_path, "saved")
+            if not os.path.exists(self.out_folder):
+                os.makedirs(self.out_folder)
+            with open(self.out_folder + output_file_name,'w', encoding='utf8') as file:
+                for entity1, entity2, confidence in topk_neighbors_w_sim:
+                    file.write(str(entity1) + "\t" + str(entity2) + "\t" + str(confidence) + "\n")
+            print(self.out_folder + output_file_name, "saved")
+        return topk_neighbors_w_sim
+
+    def predict_entities(self, entities_file_path, output_file_name=None):
+        """
+        Compute the confidence of given entities if they match or not.
+        Parameters
+        ----------
+        entities_file_path : str
+            A path pointing to a file formatted as (entity1, entity2) with tab separated (tsv-file).
+            If given, the similarity of the entities is retrieved and returned (or also written to file if output_file_name is given).
+            The parameters top_k and min_sim_value do not play a role, if this parameter is set.
+        output_file_name : str, optional
+            The name of the output file. It is formatted as tsv file with entity1, entity2, confidence.
+        Returns
+        -------
+        topk_neighbors_w_sim : A list of tuples of form (entity1, entity2, confidence)
+        """
+
+        kg1_entities = list()
+        kg2_entities = list()
+        with open(entities_file_path, 'r', encoding='utf-8') as input_file:
+            for line in input_file:
+                entities = line.strip('\n').split('\t')
+                kg1_entities.append(self.kgs.kg1.entities_id_dict[entities[0]])
+                kg2_entities.append(self.kgs.kg2.entities_id_dict[entities[1]])
+        kg1_distinct_entities = list(set(kg1_entities)) # make distinct
+        kg2_distinct_entities = list(set(kg2_entities))
+
+        kg1_mapping = {entity_id : index for index, entity_id in enumerate(kg1_distinct_entities)}
+        kg2_mapping = {entity_id : index for index, entity_id in enumerate(kg2_distinct_entities)}
+
+        embeds1 = tf.nn.embedding_lookup(self.ent_embeds, kg1_distinct_entities).eval(session=self.session)
+        embeds2 = tf.nn.embedding_lookup(self.ent_embeds, kg2_distinct_entities).eval(session=self.session)
+
+        if self.mapping_mat:
+            embeds1 = np.matmul(embeds1, self.mapping_mat.eval(session=self.session))
+
+        sim_mat = sim(embeds1, embeds2, metric=self.args.eval_metric, normalize=self.args.eval_norm, csls_k=0)
+
+
+        #map back with entities_id_dict to be sure that the right uri is chosen
+        kg1_id_to_uri = {v: k for k, v in self.kgs.kg1.entities_id_dict.items()}
+        kg2_id_to_uri = {v: k for k, v in self.kgs.kg2.entities_id_dict.items()}
+
+        topk_neighbors_w_sim = []
+        for entity1_id, entity2_id in zip(kg1_entities, kg2_entities):
+            topk_neighbors_w_sim.append((
+                kg1_id_to_uri[entity1_id],
+                kg2_id_to_uri[entity2_id],                
+                sim_mat[kg1_mapping[entity1_id], kg2_mapping[entity2_id]]
+            ))
+
+        if output_file_name is not None:
+            #create dir if not existent
+            if not os.path.exists(self.out_folder):
+                os.makedirs(self.out_folder)
+            with open(self.out_folder + output_file_name,'w', encoding='utf8') as file:
+                for entity1, entity2, confidence in topk_neighbors_w_sim:
+                    file.write(str(entity1) + "\t" + str(entity2) + "\t" + str(confidence) + "\n")
+            print(self.out_folder + output_file_name, "saved")
 
         return topk_neighbors_w_sim

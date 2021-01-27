@@ -336,8 +336,29 @@ def save_embeddings(folder, kgs, ent_embeds, rel_embeds, attr_embeds, mapping_ma
     dict2file(folder + 'kg2_rel_ids', kgs.kg2.relations_id_dict)
     dict2file(folder + 'kg1_attr_ids', kgs.kg1.attributes_id_dict)
     dict2file(folder + 'kg2_attr_ids', kgs.kg2.attributes_id_dict)
+    
+    embed2file(folder, 'ent_embeds_txt', ent_embeds, kgs.kg1.entities_id_dict, kgs.kg2.entities_id_dict)
+    embed2file(folder, 'rel_embeds_txt', rel_embeds, kgs.kg1.relations_id_dict, kgs.kg2.relations_id_dict)
+    embed2file(folder, 'attr_embeds_txt', attr_embeds, kgs.kg1.attributes_id_dict, kgs.kg2.attributes_id_dict)
+    
     print("Embeddings saved!")
 
+def embed2file(results_folder, file_name, embedding, kg1_id_dict, kg2_id_dict, seperate=True):
+    if embedding is None or kg1_id_dict is None or kg2_id_dict is None:
+        return
+    if seperate:
+        with open(results_folder + 'kg1_' + file_name, 'w', encoding='utf8') as f:
+            for entity_uri, entity_index in kg1_id_dict.items():
+                f.write(str(entity_uri) + ' ' + ' '.join(map(str, embedding[entity_index])) + '\n')
+        with open(results_folder + 'kg2_' + file_name, 'w', encoding='utf8') as f:
+            for entity_uri, entity_index in kg2_id_dict.items():
+                f.write(str(entity_uri) + ' ' + ' '.join(map(str, embedding[entity_index])) + '\n')
+    else:
+        with open(results_folder + 'combined_' + file_name, 'w', encoding='utf8') as f:
+            for entity_uri, entity_index in kg1_id_dict.items():
+                f.write(str(entity_uri) + ' ' + ' '.join(map(str, embedding[entity_index])) + '\n')
+            for entity_uri, entity_index in kg2_id_dict.items():
+                f.write(str(entity_uri) + ' ' + ' '.join(map(str, embedding[entity_index])) + '\n')
 
 def read_attribute_triples(file_path):
     print("read attribute triples:", file_path)
