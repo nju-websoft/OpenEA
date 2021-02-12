@@ -82,6 +82,11 @@ class KG:
         self.attributes_list = list(self.attributes_set)
         self.attributes_num = len(self.attributes_set)
 
+        # add the new entities from attribute triples
+        self.entities_set |= entities
+        self.entities_list = list(self.entities_set)
+        self.entities_num = len(self.entities_set)
+
         self.attribute_triples_num = len(self.attribute_triples_set)
         self.local_attribute_triples_num = len(self.local_attribute_triples_set)
         self.generate_attribute_triple_dict()

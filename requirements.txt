@@ -5,3 +5,4 @@ numpy
 gensim
 python-Levenshtein
 scipy
+matplotlib
