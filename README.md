@@ -9,6 +9,8 @@
 
 *** **UPDATE** ***
 
+- June 29, 2021: We release the [DBP2.0](https://github.com/nju-websoft/OpenEA/tree/master/dbp2.0) dataset for [entity alignment with dangling cases](https://arxiv.org/pdf/2106.02248.pdf) (the source code is coming soon).
+
 - Jan. 8, 2021: The results of AliNet on OpenEA datasets are avaliable at [Google docs](https://docs.google.com/spreadsheets/d/1P_MX8V7zOlZjhHlEMiXbXlIaMGSJT1Gh_gZWe4yIQBY/edit?usp=sharing).
 
 - Nov. 30, 2020: We release **a new version (v2.0) of the OpenEA dataset**, where the URIs of DBpedia and YAGO entities are encoded to resovle the [name bias](https://www.aclweb.org/anthology/2020.emnlp-main.515.pdf) issue. It is strongly recommended to use the [v2.0 dataset](https://www.dropbox.com/s/xfehqm4pcd9yw0v/OpenEA_dataset_v2.0.zip?dl=0) for evaluating attribute-based entity alignment methods, such that the results can better reflect the robustness of these methods in real-world situation.
@@ -283,3 +285,16 @@ If you find the benchmark datasets, the OpenEA library or the experimental resul
   url       = {http://www.vldb.org/pvldb/vol13/p2326-sun.pdf}
 }
 ```
+
+If you use the DBP2.0 dataset, please kindly cite the following paper:
+```
+@inproceedings{DBP2,
+  author    = {Zequn Sun and
+               Muhao Chen and
+               Wei Hu},
+  title     = {Knowing the No-match: Entity Alignment with Dangling Cases},
+  booktitle = {ACL},
+  year      = {2021}
+}
+```
+
