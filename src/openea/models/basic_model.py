@@ -272,12 +272,18 @@ class BasicModel:
                 if neighbors1 is not None:
                     del neighbors1, neighbors2
                 gc.collect()
-                neighbors1 = bat.generate_neighbours(self.eval_kg1_useful_ent_embeddings(),
-                                                     self.kgs.useful_entities_list1,
-                                                     neighbors_num1, self.args.batch_threads_num)
-                neighbors2 = bat.generate_neighbours(self.eval_kg2_useful_ent_embeddings(),
-                                                     self.kgs.useful_entities_list2,
-                                                     neighbors_num2, self.args.batch_threads_num)
+                # neighbors1 = bat.generate_neighbours(self.eval_kg1_useful_ent_embeddings(),
+                #                                      self.kgs.useful_entities_list1,
+                #                                      neighbors_num1, self.args.test_threads_num)
+                # neighbors2 = bat.generate_neighbours(self.eval_kg2_useful_ent_embeddings(),
+                #                                      self.kgs.useful_entities_list2,
+                #                                      neighbors_num2, self.args.test_threads_num)
+                neighbors1 = bat.generate_neighbours_single_thread(self.eval_kg1_useful_ent_embeddings(),
+                                                                   self.kgs.useful_entities_list1,
+                                                                   neighbors_num1, self.args.test_threads_num)
+                neighbors2 = bat.generate_neighbours_single_thread(self.eval_kg2_useful_ent_embeddings(),
+                                                                   self.kgs.useful_entities_list2,
+                                                                   neighbors_num2, self.args.test_threads_num)
                 ent_num = len(self.kgs.kg1.entities_list) + len(self.kgs.kg2.entities_list)
                 print("\ngenerating neighbors of {} entities costs {:.3f} s.".format(ent_num, time.time() - t1))
                 gc.collect()

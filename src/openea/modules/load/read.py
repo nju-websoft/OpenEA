@@ -18,9 +18,14 @@ def sort_elements(triples, elements_set):
             dic[p] = dic.get(p, 0) + 1
         if o in elements_set:
             dic[o] = dic.get(o, 0) + 1
+    # set the frequency of other entities that have no relation triples to zero
+    for e in elements_set:
+        if e not in dic:
+            dic[e] = 0
     # firstly sort by values (i.e., frequencies), if equal, by keys (i.e, URIs)
     sorted_list = sorted(dic.items(), key=lambda x: (x[1], x[0]), reverse=True)
     ordered_elements = [x[0] for x in sorted_list]
+    assert len(dic) == len(elements_set)
     return ordered_elements, dic
 
 

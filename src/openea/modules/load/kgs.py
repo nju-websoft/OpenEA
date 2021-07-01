@@ -65,8 +65,11 @@ class KGs:
             self.valid_entities1 = [link[0] for link in self.valid_links]
             self.valid_entities2 = [link[1] for link in self.valid_links]
 
-        self.useful_entities_list1 = self.train_entities1 + self.valid_entities1 + self.test_entities1
-        self.useful_entities_list2 = self.train_entities2 + self.valid_entities2 + self.test_entities2
+        # self.useful_entities_list1 = self.train_entities1 + self.valid_entities1 + self.test_entities1
+        # self.useful_entities_list2 = self.train_entities2 + self.valid_entities2 + self.test_entities2
+
+        self.useful_entities_list1 = self.kg1.entities_list
+        self.useful_entities_list2 = self.kg2.entities_list
 
         self.entities_num = len(self.kg1.entities_set | self.kg2.entities_set)
         self.relations_num = len(self.kg1.relations_set | self.kg2.relations_set)
