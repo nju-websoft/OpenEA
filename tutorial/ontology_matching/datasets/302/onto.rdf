@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY person "http://ebiquity.umbc.edu/v2.1/ontology/person.owl#">
+  <!ENTITY project "http://ebiquity.umbc.edu/v2.1/ontology/project.owl#">
+  <!ENTITY pub "http://ebiquity.umbc.edu/v2.1/ontology/publication.owl#">]>
+<rdf:RDF 
+  xmlns:rdf = "&rdf;"
+  xmlns:rdfs = "&rdfs;"
+  xmlns:xsd = "&xsd;"
+  xmlns:owl = "&owl;"
+  xmlns:person = "&person;"
+  xmlns:project = "&project;"
+  xmlns:pub = "&pub;"
+  xmlns = "&pub;"
+  xml:base = "&pub;">
+  
+  <owl:Ontology rdf:about="&pub;publication">
+    <owl:versionInfo>0.1</owl:versionInfo>
+    <rdfs:label>eBiquity Publication Ontology</rdfs:label>
+  </owl:Ontology>
+
+  <owl:Class rdf:ID="Resource">
+    <rdfs:label>Resource</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#title"/><owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#publishedOn"/><owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#description"/><owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#version"/><owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#author"/><owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#firstAuthor"/><owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality></owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:DatatypeProperty rdf:ID="title">
+    <rdfs:label>Publication Title</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="publishedOn">
+    <rdfs:label>Resource Published On Date and Time</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="description">
+    <rdfs:label>Resource Description</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="keyword">
+    <rdfs:label>Resource Keyword</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="version">
+    <rdfs:label>Resource Version</rdfs:label>    
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:ID="author">
+    <rdfs:label>Resource Author</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&person;Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="firstAuthor">
+    <rdfs:label>Resource First Author</rdfs:label>       
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&person;Person"/>
+  </owl:ObjectProperty>        
+
+  <owl:ObjectProperty rdf:ID="softCopy">
+    <rdfs:label>Resource Soft Copy</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="#SoftCopy"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:ID="type">
+    <rdfs:label>Resource Type</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:ID="relatedProject">
+    <rdfs:label>Related Project</rdfs:label>
+    <owl:inverseOf rdf:resource="&project;relatedResource" />
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&project;Project"/>
+  </owl:ObjectProperty>
+
+<!-- ... -->
+
+  <owl:Class rdf:ID="SoftCopy">
+    <rdfs:label>Soft Copy</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#softCopyFormat"/><owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#softCopyURI"/><owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#softCopySize"/><owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality></owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:DatatypeProperty rdf:ID="softCopyFormat">
+    <rdfs:label>Soft Copy Format</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="softCopyURI">
+    <rdfs:label>Soft Copy URI</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;anyURI"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="softCopySize">
+    <rdfs:label>Soft Copy File Size</rdfs:label>
+    <rdfs:domain rdf:resource="#Resource"/>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+  </owl:DatatypeProperty>
+
+<!-- ... -->
+
+  <owl:Class rdf:ID="Publication">
+    <rdfs:label>Publication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#editor"/><owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality></owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction><owl:onProperty rdf:resource="#abstract"/><owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality></owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="editor">
+    <rdfs:label>Publication Editor</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&person;Person"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:ID="abstract">
+    <rdfs:label>Publication Abstract</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="edition">
+    <rdfs:label>Publication Edition</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="chapter">
+    <rdfs:label>Publication Chapter</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="series">
+    <rdfs:label>Publication Series</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="pages">
+    <rdfs:label>Publication Pages</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="volume">
+    <rdfs:label>Publication Volume</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="number">
+    <rdfs:label>Publication Number</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="note">
+    <rdfs:label>Publication Note</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="address">
+    <rdfs:label>Publication Address</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="organization">
+    <rdfs:label>Publication Organization</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="journal">
+    <rdfs:label>Publication Journal</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="booktitle">
+    <rdfs:label>Publication Book Title</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="school">
+    <rdfs:label>Publication School</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="institution">
+    <rdfs:label>Publication Institution</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="publisher">
+    <rdfs:label>Publication Publisher</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="counter">
+    <rdfs:label>Publication Counter</rdfs:label>
+    <rdfs:domain rdf:resource="#Publication"/>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+  </owl:DatatypeProperty>
+
+  <owl:Class rdf:ID="Article">
+    <rdfs:label>Article</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Book">
+    <rdfs:label>Book</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="InBook">
+    <rdfs:label>InBook</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="InCollection">
+    <rdfs:label>InCollection</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="InProceedings">
+    <rdfs:label>InProceedings</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="MastersThesis">
+    <rdfs:label>MastersThesis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Misc">
+    <rdfs:label>Misc</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="PhdThesis">
+    <rdfs:label>PhdThesis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Proceedings">
+    <rdfs:label>Proceedings</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="TechReport">
+    <rdfs:label>TechReport</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&pub;Publication" />
+  </owl:Class>
+
+</rdf:RDF>

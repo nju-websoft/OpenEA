@@ -1,0 +1,2093 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    <owl:Ontology rdf:about=""/>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ResearchProject">
+        <rdfs:label>ResearchProject</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+        </rdfs:subClassOf>
+
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#MasterThesis">
+        <rdfs:label>MasterThesis</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Thesis"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Institute">
+        <rdfs:label>Institute</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#hasParts"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ResearchGroup"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#cooperateWith"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Institute"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AssociateProfessor">
+        <rdfs:label>AssociateProfessor</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#FacultyMember"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ResearchGroup">
+        <rdfs:label>ResearchGroup</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#head"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#member"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ResearchTopic">
+        <rdfs:label>ResearchTopic</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Topic"/>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#dealtWithIn"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#isWorkedOnBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AcademicStaff"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#TechnicalStaff">
+
+        <rdfs:label>TechnicalStaff</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AssistantProfessor">
+        <rdfs:label>AssistantProfessor</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#FacultyMember"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication">
+        <rdfs:label>Publication</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#keywords"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#year"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#note"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#abstract"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#title"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Exhibition">
+        <rdfs:label>Exhibition</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Article">
+        <rdfs:label>Article</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#volume"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#number"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#journal"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#pages"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AcademicStaff">
+        <rdfs:label>AcademicStaff</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#cooperateWith"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AcademicStaff"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#worksAtProject"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#organizerOrChairOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#headOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publication"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#supervises"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#PhDStudent"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#memberOfPC"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#headOfGroup"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ResearchGroup"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#editor"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#FacultyMember">
+        <rdfs:label>FacultyMember</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AcademicStaff"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Product">
+        <rdfs:label>Product</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#name"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#developedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project">
+        <rdfs:label>Project</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#head"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#carriedOutBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#member"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#name"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#financedBy"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#isAbout"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ResearchTopic"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#projectInfo"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string">
+        <rdfs:label>string</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Workshop">
+        <rdfs:label>Workshop</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Graduate">
+        <rdfs:label>Graduate</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Student"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Proceedings">
+        <rdfs:label>Proceedings</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#number"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#editor"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#organization"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#volume"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publisher"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#PhDStudent">
+        <rdfs:label>PhDStudent</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Graduate"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#supervisor"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AcademicStaff"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#worksAtProject"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publication"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#SoftwareComponent">
+        <rdfs:label>SoftwareComponent</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Product"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#hasPrice"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Association">
+
+        <rdfs:label>Association</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Lecture">
+        <rdfs:label>Lecture</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#givenBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Booklet">
+        <rdfs:label>Booklet</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#howpublished"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event">
+
+        <rdfs:label>Event</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#date"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#hasPartEvent"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#name"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#atEvent"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#location"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#eventTitle"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Topic">
+        <rdfs:label>Topic</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#name"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#InProceedings">
+        <rdfs:label>InProceedings</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#editor"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#organization"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#booktitle"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#number"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publisher"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#volume"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#pages"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer">
+        <rdfs:label>integer</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#InBook">
+        <rdfs:label>InBook</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publisher"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#edition"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#pages"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#chapter"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#editor"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#number"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#volume"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#type"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Manual">
+        <rdfs:label>Manual</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#edition"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#organization"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#InCollection">
+        <rdfs:label>InCollection</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publisher"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#edition"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#number"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#editor"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#pages"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#chapter"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#volume"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#booktitle"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#type"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person">
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#email"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#homepage"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#photo"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#name"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#phone"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#fax"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#SoftwareProject">
+        <rdfs:label>SoftwareProject</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#DevelopmentProject"/>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#product"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Product"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Report">
+        <rdfs:label>Report</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Thesis">
+        <rdfs:label>Thesis</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#school"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#University"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#type"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#TechnicalReport">
+        <rdfs:label>TechnicalReport</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Report"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#organization"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Enterprise">
+        <rdfs:label>Enterprise</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Manager">
+        <rdfs:label>Manager</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization">
+        <rdfs:label>Organization</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#carriesOut"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#employs"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publishes"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#technicalReport"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#TechnicalReport"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#develops"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Product"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#location"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#finances"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#name"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Meeting">
+        <rdfs:label>Meeting</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#title"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#date"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#participant"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee">
+        <rdfs:label>Employee</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#affiliation"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#FullProfessor">
+        <rdfs:label>FullProfessor</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#FacultyMember"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Book">
+        <rdfs:label>Book</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#number"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#editor"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#edition"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#source"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#price"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publisher"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#address"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#isbn"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#volume"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#integer"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Misc">
+
+        <rdfs:label>Misc</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#howpublished"/>
+                <owl:allValuesFrom>
+
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ProjectReport">
+        <rdfs:label>ProjectReport</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Report"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#describesProject"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Lecturer">
+        <rdfs:label>Lecturer</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AcademicStaff"/>
+
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#PhDThesis">
+        <rdfs:label>PhDThesis</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Thesis"/>
+        </rdfs:subClassOf>
+
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Unpublished">
+        <rdfs:label>Unpublished</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Publication"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#author"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#month"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#University">
+        <rdfs:label>University</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#student"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Student"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#hasParts"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Department"/>
+                </owl:allValuesFrom>
+
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#DevelopmentProject">
+        <rdfs:label>DevelopmentProject</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Project"/>
+
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Undergraduate">
+        <rdfs:label>Undergraduate</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Student"/>
+        </rdfs:subClassOf>
+
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#AdministrativeStaff">
+        <rdfs:label>AdministrativeStaff</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Employee"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#ProjectMeeting">
+        <rdfs:label>ProjectMeeting</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Meeting"/>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Conference">
+
+        <rdfs:label>Conference</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Event"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#series"/>
+
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.w3.org/TR/xmlschema-2/#string"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Department">
+        <rdfs:label>Department</rdfs:label>
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Organization"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#hasParts"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Institute"/>
+
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Student">
+        <rdfs:label>Student</rdfs:label>
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:subClassOf>
+
+            <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Person"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#studiesAt"/>
+                <owl:allValuesFrom>
+                    <owl:Class rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#University"/>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#memberOfPC">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>memberOfPC</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#developedBy">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>developedBy</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#givenBy">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>givenBy</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#booktitle">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>booktitle</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#organizerOrChairOf">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>organizerOrChairOf</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#studiesAt">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>studiesAt</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#dealtWithIn">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>dealtWithIn</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#finances">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>finances</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#chapter">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>chapter</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#participant">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>participant</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#homepage">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>homepage</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#institution">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>institution</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#RootRelation">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>RootRelation</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#hasParts">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>hasParts</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#hasPrice">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>hasPrice</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#cooperateWith">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>cooperateWith</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#email">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>email</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#month">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>month</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#pages">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>pages</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#phone">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>phone</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#photo">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>photo</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#price">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>price</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#title">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>title</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#keywords">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>keywords</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#fax">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>fax</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#carriesOut">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>carriesOut</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#carriedOutBy"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#isAbout">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>isAbout</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#affiliation">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>affiliation</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#eventTitle">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>eventTitle</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#organization">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>organization</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#edition">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>edition</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#student">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>student</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#worksAtProject">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>worksAtProject</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#isWorkedOnBy"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#develops">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>develops</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#developedBy"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#hasPartEvent">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>hasPartEvent</rdfs:label>
+
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#atEvent"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#employs">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>employs</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#affiliation"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#author">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>author</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#carriedOutBy">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>carriedOutBy</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#Root">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>Root</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#date">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>date</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#head">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>head</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#isbn">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>isbn</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#name">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>name</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#note">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>note</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#type">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>type</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#year">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>year</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#editor">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>editor</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#journal">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>journal</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#headOf">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>headOf</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#headOfGroup">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>headOfGroup</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#head"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#isWorkedOnBy">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>isWorkedOnBy</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#member">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>member</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#number">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>number</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#address">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>address</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#abstract">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>abstract</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#school">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>school</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#series">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>series</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#source">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>source</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#describesProject">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>describesProject</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#volume">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>volume</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#location">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>location</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#technicalReport">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>technicalReport</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#publication">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>publication</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#projectInfo">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>projectInfo</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#describesProject"/>
+
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#atEvent">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>atEvent</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#howpublished">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>howpublished</rdfs:label>
+
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#financedBy">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>financedBy</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#supervises">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>supervises</rdfs:label>
+
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#supervisor">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>supervisor</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#supervises"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#publisher">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+
+        <rdfs:label>publisher</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.aifb.uni-karlsruhe.de/ontology#publishes"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#publishes">
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>publishes</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.aifb.uni-karlsruhe.de/ontology#product">
+
+        <rdfs:comment><![CDATA[]]></rdfs:comment>
+        <rdfs:label>product</rdfs:label>
+    </owl:ObjectProperty>
+</rdf:RDF>

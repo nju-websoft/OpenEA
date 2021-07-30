@@ -1,0 +1,1266 @@
+isbn	author
+0201853949	Knuth, Donald E.
+0321335708	Knuth, Donald E.
+0201853922	Knuth, Donald E.
+0201853930	Knuth, Donald E.
+0201361213	Sedgewick, Robert
+0201775786	Robert Sedgewick
+0201361205	Sedgewick, Robert
+0201756080	Sedgewick, Robert
+020172684X	Sedgewick, Robert
+0201896842	Knuth, Donald E.
+0201896850	Knuth, Donald E.
+0201896834	Knuth, Donald E.
+020140009X	Sedgewick, Robert; Flajolet, Philippe
+020163208X	Binstock, Andrew; Rex, John
+0201558025	Graham, Ronald L.
+0201548569	Jaja, Joseph
+0321204662	Negnevitsky, Michael
+0321263189	Luger, George F.
+0201648660	Luger, George F.
+0805325476	Dean, Thomas
+0201533774	Winston
+0201539217	David M. Skapura
+0201157675	Goldberg, David E.
+0321486811	Alfred V. Aho , Columbia University Monica S. Lam , Stanford U
+0321428900	Aho, Alfred V.; Sethi, Ravi; etc.
+1576761053	Galles, David
+0805327304	Michael Wolfe
+0805321667	Charles Fischer, Richard LeBlanc
+0201100886	Aho, Alfred V.; Ullman, Jeffrey D.; Sethi, Ravi
+0201612534	John D. Carpinelli
+0321112296	Rozanski, Nick
+0201325713	Hofmeister, Christine
+0321321375	Angel, Edward
+0321237625	Angel, Edward
+0201398559	Watt, Alan H.
+0201309440	Hawash, Maher,
+0201407094	Ron Fosner
+0201848406	Foley, James D.; Van Dam, Andries; Feiner, Steven K.; Hughes, John F.
+0201483599	Kilgard, Mark J.
+0201609215	Foley, James D.
+0321466756	Platt, David S.
+0321321359	Lazar, Jonathan
+0321116291	Benyon, David
+0321197860	Shneiderman, Ben; Plaisant, Catherine
+0321181433	Lauesen, Soren
+0201758679	Bowman, Doug A.
+0201704471	Carroll, John M.
+0201379376	Raskin, Jef
+0201483548	Lazzaro, Joseph J.
+0201550601	Laurel, Brenda
+0201608421	Tognazzini, Bruce
+0201517973	Laurel, Brenda
+0321399420	Date, C.J.; Darwen, Hugh
+0321369572	Navathe, Shamkant B.; Elmasri, Ramez
+0321268458	Not Available
+0321294017	Connolly, Thomas M., Begg, Carolyn E.
+0321228383	Kifer, M.; Bernstein, Arthur; Lewis, Philip M.
+0321206746	Elmasri, Ramez
+0321197844	Date, C.J.
+0321194985	Sunderraman, Rajshekhar
+0321185560	Riccardi, Greg
+0201612941	C. J. Date
+0321243625	Vaughn, William R.; Blackburn, Peter
+0321245458	Schneider, Bob
+0201715848	Lewis, Jonathan
+0321321367	Kumar, Vipin; Steinbach, Michael; Tan, Pang-Ning
+0321290933	Riordan, Rebecca M.
+0201741288	Roiger, Richard J.; Geatz, Michael
+0201773635	Earp, Richard
+0321293533	Ambler, Scott; Sadalage, Pramodkumar
+0321205618	Riordan, Rebecca M.
+0672323435	Jeffrey P. McManus, Jackie Goldstein
+0201752840	Hernandez, Michael J.
+0321119045	Bagui &amp; Earp
+0201752948	Palinski, John Adolph
+0201741296	Mullins, Craig S.
+0201713063	Michael H. Brackett ,
+0201485559	Pascal, Fabian
+0321397967	Raheem, Michael
+0321397975	Woody, Buck
+0321356985	Hancock, John C.; Toren, Roger
+0321447743	Henderson, Ken
+0321382188	Beauchemin, Bob
+0321349792	Brown, Eric L.
+0321287509	Henderson, Ken
+0321268288	Blackburn, Peter; Vaughn, William R.
+0321180593	Beauchemin, Bob
+0201700476	Henderson, Ken
+0201742039	Woody, Buck
+0201700468	Henderson, Ken
+0201657961	Daniel Appelquist
+0201703092	Bowman, Judith S.; Emerson, Sandra L.; Darnovsky, Marcy
+0201615762	Henderson, Ken
+0201596180	Lans, Rick F. Van Der
+0201433362	Hernandez, Michael J.
+1576760820	Day
+0321305965	Lans, Rick F.Van Der
+0672321467	Edward Whalen, Mitchell Schroeter
+0201325748	Morle, James
+0201634457	Wendelken, David,
+032143675X	Felke-Morris, Terry
+0321304292	Scollard, Lafayette
+1576761428	Golbeck, Jennifer
+1576761150	Felke-Morris, Terry
+0321129474	Lehnert, Wendy G.
+0201737345	Lehnert, Wendy G.
+0201357526	Andrews, Gregory R.
+0131013769	Hughes, Cameron
+0321303326	Sebesta, Robert W.
+0201750767	Yuen, P.K.Lau, Vincent
+1576760286	John Avila
+1576760189	Lin, Forest
+1576760243	Lin, Forest
+0321321286	Barnett, Ryan C.
+0321193121	Lie, Hakon Wium; Bos, Bert
+0131498622	Holzner, Steven
+0321146182	Monson-Haefel, Richard
+0321194446	English, Bill
+020177061X	Lee
+0672323575	Paul D. Sheriff; Ken Getz
+0201734400	Matt J. Crouch
+0201760436	Highsmith, James A.
+0201740958	Skonnard, Aaron; Gudgin, Martin
+0201729202	Jacobson, Dov; Jacobson, Jesse
+0672323540	Kochmer, Casey
+0672321319	Jeffrey P. McManus; Chris Kinsman
+0201703599	Sall, Kenneth B.
+0201770040	Hiroshi MaruyamaAndy ClarkMakoto MurataN
+0201776413	Coyle, Frank P.
+020171499X	Leuf, Bo
+0201710145	Kevin Meltzer; Brent Michalski
+0201657643	Vivek Sharma
+0201709147	Don Box Aaron Skonnard John Lam
+0201379619	Jeff Rule
+0201634627	Lincoln D. Stein
+0201924803	Smith, Richard E.
+0201422190	Boutell, Thomas
+0201847604	Steven Miller
+0201489805	Thomas J. Smedinghoff
+0201876744	Salus, Peter H.
+0201489295	Lescher, John F.
+0201489163	Dave Campbell, Mary Campbell
+020163337X	Ousterhout, John K.
+1576761355	Felke
+1576761363	Felke
+0201774224	John M. Slatin, Sharron Rush
+0321112555	Shelford, Thomas J.; Remillard, Gregory A.
+0201729938	Badre, Albert N.
+0201657821	Nakano, Russell
+0201433311	Jessica Burdman
+0131453491	Megginson, David
+0201771683	Dwight Peltzer
+0321150406	Elliotte Rusty Harold
+0321154991	Raman, T. V.
+0321136179	Neil Bradley
+0321180607	Katz, Howard
+0321165810	Brundage, Michael
+0201771861	Harold, Elliotte Rusty
+0201844524	Chaudhri Akmal B et al
+0201749602	Jack Park, Sam Hunting
+0201709155	Carlson, David
+0321159837	Nutt
+0321267516	Davis, William S.; Rajkumar, T. M.
+032122731X	Sarwar, Syed Mansoor; Koretsky, Robert; Sarwar, Syed Aqeel
+1576761061	Schmidt, Cheryl A.
+0201773449	Nutt, Gary J.
+0201773457	Sarwar &amp; Koretsky
+0201741954	ADDISON-WESLEY
+0201725959	Syed Mansoor Sarwar, Robert Koretsky, Syed Aqeel Sarwar
+0201612437	Nutt, Gary J.
+0201477084	Nutt, Gary/ Nutt, Gary
+0201548879	Kifer, Michael; Smolka, Scott A.
+0201622076	Ted Landau
+0805375651	Sobell, Mark G.
+080537566X	Sobell, Mark G.
+0131429019	Raymond, Eric S.
+0131411551	Stevens, W.Richard
+0201593882	Siegert, Andreas
+0201419793	Paul W. Abrahams, Bruce R. Larson
+0201549794	McKusick, Marshall Kirk; Bostic, Keith; Karels, Michael J.; Quarterman, John S.
+0201823764	Paul W. Abrahams Bruce R. Larson
+0201547775	Salus, Peter H.
+0201633388	Schimmel, Curt
+0201563177	Stevens, W. Richard
+0201523744	Pajari, George
+0321423437	Gagn&eacute;, Marcel
+032142722X	Gagne, Marcel
+0321356403	Gagne, Marcel
+0321219147	Johnson, Michael K.; Troan, Erik W.
+0131853546	Valade, Janet
+0672322269	Hollabaugh, Craig
+0201719754	Beck, Michael
+0201719347	Gagne, Marcel
+0201674726	Tansley, David
+0201895498	Sobell, Mark G.
+0201563452	Michael A. Schoonover John S. Bowie William R. Arnold
+020156324X	Barry Rosenberg
+0201767910	Rucker, Rudy
+0321399838	Shukla, Dharma; Schmidt, Bob
+0321440307	Chen, Raymond
+0321197690	Noyes, Brian
+0321194047	Chappell, David
+0321228480	Kouti, Sakari
+0321256190	Hart, Johnson M.
+1578702763	Mathers, Todd W.
+0321174038	Paul Yao, David Durant
+0321174046	Paul Yao, David Durant
+0321197887	Fox, Dan
+0321213343	Jones, Don
+0201734117	Box, Don
+0201770180	Damien Watkins Mark Hammond Brad Abrams
+0201708523	Grimes, Richard
+0201616211	Kouti, Sakari/ Seitsonen, Mika
+0735711925	Harwood, Ted
+0201703106	Hart, Johnson M.
+020170238X	McKay, Everett N./ Woodring, Mike
+0201615754	Piemonte, Raffaele
+0201604426	Keith Brown
+0201695898	Rector, Brent; Sells, Chris
+0201379368	Skonnard, Aaron
+0201325810	Dickman, Alan
+0201633582	Feuer, Alan R.
+0201442345	Beveridge, Jim/ Wiener, Robert
+0201634929	Rector, Brent E.; Newcomer, Joseph M.
+0201407876	Kovel, Jeff; Quirk, Kent; Gabin, Jay
+0201407213	George Shepherd Scot Wingo
+0201608359	Chappell, Geoff
+0201632187	Al Williams
+0201608375	Lai, Robert S.
+0321263545	George Coulouris, Jean Dollimore, Tim Kindberg
+032131283X	Ben-Ari, M.
+0201796449	Liu, Mei-Ling L.; Liu, Mei-Ling
+0201730464	Ince, Darrel
+0201619180	Coulouris, George
+0201498383	Chow, Randy/ Johnson, Theodore
+0201795256	Schmidt, Douglas C.; Huston, Stephen D.
+0201784726	Hapner, Mark
+0201710374	Reilly, David; Reilly, Michael
+0201711028	Chen, Kirk/ Gong, Li
+0201634465	Box, Don
+0321227239	Shinn, Michael; Shinn, Scott
+0321194330	Whittaker, James A./ Thompson, Herbert H
+0321444426	Dowd, Mark; McDonald, John
+0321304861	Wysopal, Chris
+0321437292	Hohmann, Luke
+0321426428	McCarthy, Linda
+0321349946	Nik Alston; Mike Chapple; Kirk Hausman
+0321320735	Kenan, Kevin
+0321349962	Bejtlich, Richard
+0321369440	Andrews, Mike; Whittaker, James A.
+0321240693	Jones, Keith J.; Bejtlich, Richard
+0321294319	Hoglund, Greg; Butler, Jamie
+0321335724	Seacord, Robert
+0321349954	Dwivedi, Himanshu
+0321418700	Viega, John; Hoglund, Greg; McGraw, Gary
+0321356705	McGraw, Gary
+0321356411	Conry-Murray, Andrew; Weafer, Vincent
+0321228359	Brown, Keith
+0321304543	Peter Szor
+0321304519	Egan, Mark; Mather, Tim
+0321268172	Carrier, Brian
+020163497X	Farmer, Dan; Venema, Wietse
+0321247442	Bishop, Matt
+0321304527	Patterson, Tom; Blue, Scott Gleeson
+0321224094	Cannon, J. C.
+0321246772	Bejtlich, Richard
+0321305019	Bragg, Roberta
+0321197674	Gupta, Ajay; Laliberte, Scott
+0321180615	Welch-Abernathy, Dameon D.
+0201786958	Hoglund, Greg; McGraw, Gary
+0321136209	Edney, Jon; Arbaugh, William A.
+0321202171	Vladimirov, Andrew; Gavrilenko, Konstantin V.; Mikhailovsky, Andrei A.
+0201440997	Bishop, Matt
+020163466X	Cheswick, William R.; Rubin, Aviel D.; Bellovin, Steven M.
+0321108957	Spitzner, Lance
+0201787911	Li Gong, Gary Ellison, Mary Dageforde
+0672323915	Adams, Carlisle; Lloyd, Steve
+0201761769	McClure, Stuart
+0201615991	Smith, Richard E.
+020172152X	Viega, John
+0201707195	Kruse, Warren G.
+0201719568	Klevinsky, T. J.
+020173723X	Julia H. Allen
+0201616475	Mel, H.X.
+0201675161	Crume, Jeff
+0201674718	Ryan, Peter
+0201615983	Rescorla, Eric
+0201702096	Yuan, Ruixi/ Strayer, W. Timothy
+0201711141	Rubin, Aviel D.
+0201433176	Wadlow, Thomas A.
+0201309807	Jalal Feghhi Peter Williams
+0201433036	Denning, Dorothy E.
+0201379244	Tung, Brian
+0201308207	Dorothy E. Denning
+0201634899	Lincoln D. Stein
+0201530678	Peter J. Denning
+0321418492	Kurose, James F.
+0321263588	Halsall, Fred
+0321227352	Kurose, James F.; Pearson; Addison-Wesley; Ross, Keith W.
+0201781344	Jorg Liebeherr, Magda El Zarki
+0201398184	Halsall, Fred
+0321427610	Goleniewski, Lillian
+0201738279	Smith, Roderick W.
+0201719363	Dustin, Elfriede, Rashka, Jeff, McDiarmid, Douglas
+0201760320	Goleniewski, Lillian
+0672322161	Gilbert Held
+0201634422	Keshav
+0201622173	Matt Pietrek
+0321168798	Doyle, Jeff
+032124544X	Snader, Jon
+0321218736	Branigan, Steven
+0321127005	White, Russ
+0321336437	Johansson, Jesper M.; Riley, Steve
+0321262514	Clark, Tom
+0321200985	Carvey, Harlan
+032112698X	Naik, Dilip C.
+0321166469	The Honeynet Project
+0321136500	Clark, Tom
+0201752794	Bace
+0321122445	Aviva Garrett
+0201775921	Thomas, Thomas M.
+020178792X	Arkills, Brian
+0321133455	Wolf, Chris
+0201604647	Schmidt, Douglas C.; Huston, Stephen D.
+0201752778	Clark, Tom
+0201746123	Edwards, Brian M., Giuliano, Leonard A., Wright, Brian R.
+0201702711	Thomas A. Limoncelli, Christine Hogan
+0201615711	Stein, Lincoln D.
+0201309661	Moy, John T.
+0201710889	Krishnamurthy, Balachander; Rexford, Jennifer
+0201619105	Hersent, Olivier
+0201634481	Perlman, Radia
+0201657589	Rob Weltman, Tony Dahbura
+0201433192	Haugdahl, J. Scott
+0201379511	Stewart, John W.
+0201379538	Black, Darryl P.
+0201379562	Ward, Andrew F.
+0201695847	Marcus, Scott J.
+0201657600	Ginsburg, David
+0201309793	Miller, C. Kenneth
+0201634503	Sells, Chris
+0201184613	Oliver C. Ibe
+0201633957	Scott O. Bradner
+0201609991	Allan Leinwand, Karen Fang
+0201483262	Kyle, Jim
+0201563339	Craig Partridge
+0201563185	Stephen A. Rago
+0201357429	Subramanian, Mani
+0321205634	Cohen, Kackie; Daniels, Andrew
+0201325705	Callaghan, Brent
+0201776316	Stevens, W. Richard
+0201615894	Snader, Jon C.
+0201700530	Carlson, James
+0201634953	Stevens, W. Richard
+020163354X	Stevens, W. Richard; Wright Gary R.
+0201633469	Stevens, W. Richard
+0321330250	Sebesta, Robert W.
+0201710129	Wilson, L.B.
+0201590654	Sethi, Ravi
+0321350170	Dunn, Ryan; Kaplan, Joseph
+0321194454	Abrams, Tamara
+0321334884	Lippert, Eric; Carter, Eric
+0321411757	Carter, Eric; Lippert, Eric
+0321154894	Abrams
+0321154932	Miller, Jim
+0201657880	Bentley, Jon
+0201895021	Editor-Thomas J. Bergin; Editor-Richard G. Gibson
+0201137445	MacLennan, Bruce J.
+0321330242	Savitch, Walter
+0201737337	Jia, Xiaoping
+1576760960	Gittleman, Art
+1576760596	Gittleman, Art
+157676074X	Gittleman, Art
+0201751585	POHL, IRA MCDOWELL, CHARLIE
+0201726270	Laszlo, Michael J.
+0201725932	Patrick Henry Winston, Sundar Narasimhan
+0201343045	Bishop, Judy
+1576760359	Gittleman, Art
+0201612739	Timothy Budd
+0201398443	INCE, DARREL FREEMAN, ADAM
+0321490290	Jendrock, Eric
+0321334205	Zakhour, Sharon; Hommel, Scott; Royal, Jacob; Rabinovitch, Isaac; Risser, Tom; Hoeber, Mark
+0321334612	McAffer, Jeff; Lemieux, Jean-Michel
+032142672X	Clayberg, Eric
+0321396898	
+0321349806	Arnold, Ken; Gosling, James; Holmes, David
+0321304780	Chan, Patrick
+0321246780	Gosling, James
+032133678X	Joshua Bloch, Neal Gafter
+0321205219	Singh, Inderjeet
+0321228472	Clayberg, Eric; Rubel, Dan
+0321118898	Pistoia, Marco
+032124575X	Bodoff, Stephanie; Armstrong, Eric; Ball, Jennifer; Carson, Debbie Bode
+0321294327	Patrick Chan, Rosanna Lee
+0321268385	Arthorne, John
+0201728281	Rasmussen, Rolf
+0321256638	Northover &amp; Wilson
+0321136497	Falkner, Jayson; Jones, Kevin
+0201791668	Peter Eeles, Kelli Houston, Wojtek Kozaczynski
+0321213823	Patrick Chan, Rosanna Lee
+0201768100	Chan, Patrick; Dang, Lan-Ahn
+0201719541	Wilding-McBride, Daryl
+0672324083	Kreger, Heather
+0201844540	Joines, Stacy
+0321197984	Riggs, Roger; (Peursem, James - ed.)
+0201616165	Richard Hightower
+0201753065	Halloway, Stuart Dabbs
+0201787903	Johnson, Mark; Stearns, Beth
+0201775808	Sharma, Rahul/ Stearns, Beth/ Ng, Tony
+0321118871	Chan, Patrick/ Lee, Rosanna
+0201752808	Chan, Patrick
+0672323427	Verhovsek, Roman
+0201719622	Metsker, Steven John
+0201310058	Bloch, Joshua
+0201709066	Callaway, Dustin R.
+0201725886	Sun Microsystems Inc.
+0201703939	Campione, Mary; Walrath, Kathy; Huml, Alison
+0201705028	Rosanna Lee, Scott Seligman
+0201703297	Zhiqun Chen
+0201716232	Chan, PatrickBRLee, Rosanna
+0201310082	Gosling, James
+0201704331	Ken Arnold, James Gosling, David Holmes
+0201616467	Haggar, Peter
+0201485524	Patrick Chan Rosanna Lee Douglas Kramer Doug Kramer
+0201325772	Liang, Sheng
+0201485583	Campione, Mary
+0201432943	Lindholm, Tim
+0201615630	Egremont, Carlton
+0201309726	Engel, Joshua
+0201310031	Chan, Patrick; Lee, Rosanna
+0201634562	Kanerva, Jonni
+0201713748	Al Kelley, Ira Pohl
+0201702797	Muldner
+0673999866	Kenneth Reek
+020158042X	Winston, Patrick Henry
+0321108949	Romanik, Philip; Muntz, Amy
+0201758814	Hansen, Henning
+0201604612	Feuer, Alan R.
+0201183994	Kelley, Al; Pohl, Ira
+0201498413	
+0201845199	Steve Summit
+0805316701	David Hanson Christopher Fraser ,
+0201179288	Koenig, Andrew
+0321330234	Savitch, Walter
+0201787334	Ira Pohl
+0201722313	Muldner, Tomasz
+0201612461	Timothy Budd
+0201580438	Winston, Patrick Henry
+0321412990	Becker, Pete
+0321133544	Karlsson, Bjorn
+0321113586	Sutter, Herb; Alexandrescu, Andrei
+0201721481	Lippman, Stanley B.; Moo, Barbara E.; Lajoie, Josee; Lajoie, Jose
+0321227255	Abrahams, David
+0321268636	Yuan, Michael Juntao; Sharp, Kevin
+0321334876	Meyers, Scott
+0201760428	Sutter, Herb
+0201734842	Vandevoorde, David
+0201729148	Jeremy G. Siek
+020170434X	Sutter, Herb
+0201749629	Meyers, Scott
+0201704315	Alexandrescu, Andrei
+0201379236	Musser
+020170353X	Koenig, Andrew
+0201700735	Stroustrup, Bjarne
+0201379503	Bulka, Mayhew,
+0201485184	Lippman, Stanley B.
+0201615622	Sutter, Herb
+0201309777	Czarnecki, Krzysztof
+0201183951	Angelika Langer, Klaus Kreft
+0201309831	Cline, Marshall P.; (Girou, Greg - ed.)
+0201395193	Pohl, Ira
+0201309939	Tondo, Clovis L./ Leung, Bruce P.
+0201379260	Josuttis, Nicolai M.
+0201310155	Meyers, Scott
+0201309564	Matthew H. Austern
+0201824671	Coplien, James O.
+0201824701	Lippman, Stanley B.; Lajoie, Josee
+0201695871	Ira Pohl
+0201889544	Stroustrup, Bjarne
+0201895501	Pohl, Ira
+0201423391	Koenig, Andrew
+0201834545	Lippman, Stanley B.
+0201633620	Lakos, John
+020163371X	Meyers, Scott
+020151284X	Carroll, Martin D.; Ellis, Margaret A.
+0201543303	Stroustrup, Bjarne
+0201563827	Murray, Robert B.
+0201548550	Coplien, James O.
+0201563657	Cargill, Tom
+0201514591	Ellis, Margaret A.; Stroustrup, Bjarne
+0321245660	Wagner, Bill
+0321155726	Rowe, Glenn
+0321341384	Smith-Ferrier, Guy
+0321267966	Sells, Chris
+0321160770	Mahesh Chand
+0321398661	Irvine, Kip/ Gaddis, Tony
+0201734958	Ted Pattison; Joe Hummel
+0321169514	Paul Vick
+0201707128	Curland, Matthew J.
+0321462254	Hopcroft, John E., Motwani, Rajeev, Ullman, Jeffrey D.
+0321322215	Sudkamp, Thomas A.
+0201441241	Hopcroft, John E.; Ullman, Jeffrey D.; Ullman; Motwani, Rajeev; Rotwani; Hopcroft
+0201258285	Moret
+0805301437	J. Glenn Brookshear
+020102988X	Hopcroft, John E.
+0321410130	Fox, Christopher
+0321313798	Sommerville, Ian
+0321269675	Stevens, Perdita
+0321210263	Sommerville, Ian
+0201758652	Henry, Joel
+0321154207	Albert Endres, Dieter Rombach
+0201722194	Budgen, David
+0201754541	Robillard, Pierre N.; Kruchten, Philippe; D'Astous, Patrick
+020174225X	Leblanc, Cathie
+0201701030	Dick Hamlet, Joe Maybee
+020139815X	Sommerville, Ian
+0201648563	Douglas Bell
+0321166078	Spinellis, Diomidis
+0321268776	Tabaka, Jean
+0321219767	Filman, Robert E.
+0321305493	Humphrey, Watts S.
+0321136195	Manassis, Enricos
+0321193679	Steve McConnell
+0201799405	Spinellis, Diomidis
+0201794276	Doug Wallace, Isobel Raggett, Joel Aufgang
+0201741172	Stephen P. Berczuk; Brad Appleton
+0321113551	Lisa Crispin, Tip House
+0201734095	Daniel J. Paulish
+0201616408	Ken Auer, Roy Miller
+0201734850	Wiegers, Karl E.
+0201775751	Porter-Roth, Bud
+0201738260	Ferdinandi, Patricia L.
+0201616262	Jalote, Pankaj
+020161586X	Kernighan, Brian W.; Pike, Rob
+0201760312	Budd, Timothy
+0321159624	Tavares, Christopher
+0321482751	Cockburn, Alistair
+020189551X	Grady Booch, Robert A. Maksimchuk, Michael W. Engel
+0321321308	Kroll, Per; MacIsaac, Bruce
+0321262204	Buckley, Christian D.; Pulsipher, Darren W.
+0201699478	Alistair Cockburn
+0321228103	Nantz, Brian
+0321213351	Kerievsky, Joshua
+0321321316	Joe Marasco
+0201699710	Huston, Stephen D.
+0201788918	Mellor, Stephen J.; Scott, Kendall; Uhl, Axel; Weise, Dirk
+0321197704	Kruchten, Philippe
+0201379430	Wirfs-Brock, Rebecca
+0201745763	Kessler, Robert
+0201721848	Paul Bramble, Alistair Cockburn, Andy Pols, Steve Adolph
+0321166094	Kroll, Per; Kruchten, Philippe
+0201699699	Cockburn, Alistair
+0201634600	Mitchell, Richard/ McKim, Jim
+0201734109	Wampler, Bruce
+0201758202	Lars Mathiassen
+0201722291	Smith, Connie U.; Williams, Lloyd G.; Smith, Connie; Williams, Lloyd
+0201733862	McBreen, Pete
+0201731142	Korienek, Gene; Wrensch, Tom; Dechow, Doug
+0201615924	Armour, Frank
+0201711613	Lau, Yun-Tung
+0201325640	McGregor, John D.; Sykes, David A.
+0201615932	Dean Leffingwell, Don Widrig
+0201809389	Binder, Robert
+0201379457	Pritchard, Jason
+0201498375	Douglass, Bruce Powel
+0201309947	Taylor, David A.
+0201498340	Cockburn, Alistair
+0201544350	Jacobson, Ivar
+9780072320862	Hamacher, V. Carl; Vranesic, Zvonko G.; Zakay, Safwat
+9780072256758	Davis, Chris
+9780072255089	NESTLER
+9780072941494	Glenn D Blank, Robert Barnes, Edwin J. Kay
+9780072985559	Sharp, Vicki F.
+9780072976779	Steven C. Chapra
+9780073132907	Chapra, Steven C.
+9780073195995	Ford, Ralph; Coulston, Chris
+9780072231915	Bain, Steve
+9780072255096	Roger Davis
+9780070004849	Abelson, Harold; Sussman, Gerald Jay; Sussman, Julie
+9780072861983	Hayes, John P.
+9780072226966	Prosise, Chris
+9780079136787	Tan H. H., T. B. Dandapos;Orazio, H. H. Tan
+9780071374736	Zainalabedin Navabi
+9780072229233	Holzman, Carey
+9780072354676	Edward S. Rubin
+9780071357814	Zhigang Xiang, Roy A. Plastock
+9780072467505	Patt, Yale; Patel, Sanjay J.
+9780072844528	David Mercer
+9780073516677	O'Leary, Timothy J.; O'Leary, Linda I.
+9780071345545	Matatoledo, Ramon, Ph.D./ Cushman, Pauli
+9780071362078	Carter, Nick
+9780071362856	Tittel, Ed
+9780072254648	Timothy J O'Leary
+9780078216770	Sanderson, Susan
+9780072223224	Desai, Anil
+9780072225662	McCaw, Rory; Lind, Kenneth
+9780072872156	Triad Interactive
+9780072930962	Barrie Sosinsky
+9780072232325	Anil Desai
+9780072232332	McCaw, Rory/ Lind, Kenneth S.
+9780073101569	Chapra, Steve; Canale, Raymond
+9780072944822	Triad Interactive
+9780072397024	Forouzan, Behrouz A.
+9780072456103	Kenneth Laudon
+9780072551877	Triad Interactive
+9780072944792	Triad Interactive
+9780072944815	Triad Interactive
+9780072254631	TRIAD INTERACTIVE
+9780072255539	Adrian Kingsley-Hughes
+9780072944846	Triad Interactive
+9780073212227	Beer, Ferdinand P.; Johnston, Jr. E. Russell; etc.
+9780070379909	Lipschutz, Seymour
+9780071409278	Balch, Mark
+9780073528328	De Palma, Paul
+9780072478808	John Hirschbuhl, Dwight Bishop
+9780073131146	Ulmer, Donna
+9780073288512	Carol Yacht, Peachtree Software
+9780072966213	Interactive, Triad
+9780072257045	Phillips, Joseph
+9780335216369	Unsworth, Len; Thomas, Angela; Simpson, Alyson M.; Asha, Jennifer L
+9780072922363	Hutton, David W.
+9780072231243	Meyers, Michael
+9780073660967	Laura Saret
+9780072390841	Ralph S. Polimeni
+9780072847154	Hirschbuhl, John
+9780072958706	Triad Interactive
+9780072958713	Triad Interactive
+9780072999389	Yacht, Carol; Crosson, Susan
+9780070087149	Buchanan, George R.
+9780072337389	Oleary, Timothy J.; O'Leary, Linda I.
+9780072472509	Timothy J O'Leary, Linda I O'Leary, Linda O'Leary
+9780072560312	Lagerstrom, Larry Randles
+9780028005942	Albert P. Malvino
+9780072834321	COULTHARD, GLEN HUTCHINSON-CLIFFORD, SARAH
+9780072834345	Glen Coulthard, Sarah Hutchinson-Clifford
+9780072226959	Muster, John
+9780072231199	Meyers, Michael
+9780072231236	Meyers, Michael
+9780072966237	Triad Interactive
+9780078227813	Stewart, Jeffrey R
+9780072978902	Norton, Peter
+9780072466850	Reddy, J.N.
+9780072371925	Ferris J. Ritchey
+9780070137783	Carley, L., Richard
+9780072903621	CARLEY, L.RICHARD
+9780072337488	O'Leary, Timothy J./ O'Leary, Linda I.
+9780072374162	Oleary
+9780072499544	O'Leary, Timothy J./ O'Leary, Linda I./ Gross, Debra
+9780072552584	McGraw-Hill
+9780028043760	Norton
+9780028044071	Norton, Peter
+9780028048918	Robert Goldhamer
+9780028048970	Goldhamer, Robert
+9780026648172	McGraw-Hill
+9780072223194	Dennis Suhanovs
+9780072225754	Culp, Brian
+9780072834307	Glen Coulthard, Sarah Hutchinson-Clifford
+9780072226324	Meyers, Michael
+9780072226331	White, Gregory B.
+9780072971293	Triad Interactive
+9780072232172	Dennis Suhanovs, Press Certification, Certification Press
+9780072255881	Smith, Colin
+9780072978476	Norton, Peter
+9780073273266	Carol Yacht, Susan Crosson
+9780073273273	Yacht
+9780073131122	YACHT
+9780072300413	Donna Thompson
+9780072565850	Knight, Harry
+9780072843996	Stephen Haag
+9780028055879	Tobias, Carole
+9780028055909	Hinkle, Deborah
+9780028055916	Hinkle, Deborah
+9780028055923	Hinkle, Deborah
+9780028056005	Hinkle, Deborah A. (EDT)/ Hinkle, Deborah
+9780072223255	Huggins, Diana
+9780072830767	Haag, Stephen
+9780072835564	O'LEARY, LINDA I.
+9780072835595	O'LEARY, TIMOTHY O'LEARY, LINDA
+9780072226225	Robert Shimonski
+9780072845501	PEARLMAN
+9780072226973	Mark Rhodes-Ousley, Roberta Bragg, Keith Strassberg
+9780072227840	Shema, Mike
+9780072227857	Michael O'Dea
+9780072227864	Dhanjani, Nitesh
+9780072939200	OLEARY
+9780072230611	Scambray, Joel
+9780072230932	Maiwald, Eric
+9780072254914	BRADLEY
+9780072263848	Schildt, Herbert
+9780072263206	Carpenter, Tom; Moerschel, Grant; Dreger, Richard
+9780070259409	PINDYCK
+9780072565089	ROSENBERG
+9780072224986	Simpson, Alan
+9780072833430	Haag, Stephen
+9780072227413	Kay, Trevor
+9780028049212	Norton, Peter
+9780028055886	Tobias, Carole
+9780028055893	Stewart, Kathleen
+9780028055992	Fisher-Larson, Sharon Anne/ Marple, Margaret
+9780078204616	Thomas Cain
+9780072830613	Stephen Haag, James T Perry, Merrill Wells
+9780072225648	Hatch, Brian
+9780072229240	Christopher Allen, Catherine Creary, Simon Chatwin
+9780072231182	Meyers, Michael
+9780072231465	Meyers, Michael
+9780072967791	Stephen Haag
+9780072253658	Jang, Michael
+9780072232196	Diana Huggins
+9780072232066	Juarez, Jon
+9780072255607	Michael Meyers
+9780072253603	Sierra, Kathy
+9780072227765	Otey, Michael
+9780072254280	Hart, Matthew; Jesse, Scott
+9780072261943	Hardman, Ron
+9780073304274	BRADLEY
+9780072230666	Urman, Scott
+9780072263350	"Regis ""Bud"" J. Bates, Donald W. Gregory"
+9780072259605	Koletzke, Peter; Mills, Duncan
+9780072500172	Kenneth Laudon
+9780072830583	Haag, Stephen
+9780072976755	Cengel, Yunus A.; Turner, Robert
+9780070089853	Budynas, Richard G.
+0123705924	Guttman, Michael Parodi, John
+0123695139	Cohen, Frank
+0123705932	Betz, Charles T.
+1555583407	de Clercq, Jan Grillenmeier, Guido
+0750681845	P K McBride
+0750681888	STEPHEN, MOIRA
+075068187X	Keith Brindley
+0750681896	P K McBride
+0750681861	Stephen, Moira
+0750681853	Stephen Morris
+0750667311	Combe, Colin
+0123695317	Sergios Theodoridis, Konstantinos Koutroumbas
+0127425039	Pawel Plaszczak, Jr., Richard Wellner
+1558608893	Ron Goldman, Richard P. Gabriel
+075066455X	McManus
+0750663510	Levy, Margi
+155558327X	Erbschloe
+0750661402	Wendy Currie
+0120121603	Marvin Zelkowitz
+0750677562	Kagan, Aubrey
+0750661410	Andersen, Kim Viborg
+0750658959	Geoffrey Sampson
+1555582958	William Wheeler
+0750658673	McManus, John
+1558608222	Knasmuller,Markus
+0750661577	Series edited by CIMA
+1555582893	Wigodsky, Andrew
+1558609172	Dave McComb
+1558609199	Halpin, Terry
+1555583067	William Hancock
+0750676566	Kovacich, Gerald
+1558609164	Loshin, David
+1555582605	Fortier,Paul
+155558277X	Sharp,Duane
+1558608168	Daum, Berthold
+1558609067	Barry, Douglas K.
+1558608915	Jack E. Olson
+1558607587	Harmon, Paul
+1558608303	Friedlein, Ashley
+155558280X	Guruge, Anura
+0750674741	Firestone,Joseph
+1555582907	Erbschloe, Michael
+1555582648	Winston, Alan
+155558263X	Jeffrey Peel
+1555582567	Charles Breakfield Roxanne Burkey
+0080439977	Edelstein
+012449983X	Lientz, Bennet P.
+1555582516	Redman, Thomas C.
+0124499686	Lientz,Bennet
+0124499775	Lientz,Bennet
+0124499805	Lientz, Bennet P.
+0750697016	Savage, Charles M.
+0750698004	P K MCBRIDE
+1558608729	Hoos, Holger
+1558609326	Brachman
+1558608567	Ghallab
+1558608907	Dechter, Rina
+1558607609	Watson
+1558607978	Gary B. Fogel
+1558607838	Fogel, David B.
+1558606734	Bentley, Peter J.; Corne, David W.
+155860734X	Worth Martin, William Spears, Worthy N. Martin, FOGA
+1558605959	James Kennedy, Russell C. Eberhart
+1558606378	Jacob, Christian
+1558604677	Nilsson, Nils J.
+155860510X	Banzhaf, Wolfgang
+1558604626	Watson, Ian
+1558607358	Agarwal, Anant/ Lang, Jeffrey
+0123694590	Wolf, Wayne
+1558609105	Jim Smith, Ravi Nair
+0120884763	Franklin, Mark A.
+1558606041	Patterson, David A.; Hennessy, John L.
+1558608745	Sloss, Andrew; Wright, Chris; Symes, Dominic
+0122007514	William James Dally, Brian Patrick Towles
+0121981576	Mark A. Franklin
+1558609334	Foster, Ian
+1558607986	Ercegovac, Milos D.; Lang, Tomas
+1558608710	Dongarra, Jack; Fox, Geoffrey; Gropp, William; Foster, Ian; White, Andy; Kennedy, Ken; Torczon, Linda
+1558608753	Crowley, Patrick
+1558608524	Duato, Jose
+1558605967	Hennessey, John; Patterson, David A.
+0124343708	Parag K. Lala
+155860636X	Harris, David
+1558605398	Mark D. Hill
+1558605576	Ivan Edward Sutherland, Robert F. Sproull, David Harris
+1558603433	Culler, David E.; Gupta, Anoop; Singh, Jaswinder Pal
+0123229804	Handy, Jim
+1558602976	Farquhar, Erin
+0121028208	John Black
+1558601368	Przybylski, Steven A.
+0123694736	David Gelphman, Bunny Laden
+0125852630	Reinhard, Erik
+0120884828	David Gould
+0120887932	Wilkins, Mark R.
+1558606599	Tom McReynolds, David Blythe
+1558608613	Reinhard Klette, Azriel Rosenfeld
+1558608532	Fosner, Ron
+1558608354	Gould, David A.D.
+1558607927	Charles Poynton
+1558608486	Ebert, David S.
+1558605940	Philip Schneider
+1558603530	Sherman,William
+1558608389	Luebke, David P.
+1558603549	Ron Goldman
+1558608605	Blinn, Jim
+1558607870	Strothotte, Thomas; Schlechtweg, Stefan
+1558604464	Warren, Joe
+1558607374	Gerald Farin
+1558605797	Parent, Rick
+0122937856	Goulekas,Karen
+1558606696	Rogers, David F.
+1558606181	Anthony A. Apodaca, Larry Gritz
+0121339602	Brinkman, Ron
+1558604553	Blinn, Jim
+1558603751	Stollnitz, Eric J.; Derose, Tony D.; Salesin, David H.
+1558603875	Blinn
+1558604006	Bartels, Richard H.
+1558602763	Glassner, Andrew S.
+1558601066	Badler, Norman I.
+0122861604	Andrew S. Glassner
+0124477518	Li, Qing
+0120884224	Adrian Farrel, Igor Bryskin
+0123694043	Sotomayor,Borja
+0123116333	Harrington, Jan L.
+1558608346	Hofmann, Markus; Beaumont, Leland R.; Beaumont Lee; Beaumont, Leland
+0120884771	George Varghese
+012715051X	Jean-Philippe Vasseur, Mario Pickavet, Piet Demeester
+1558609148	Feng Zhao, Leonidas Guibas
+0125571895	Michal Pi&oacute;ro, Deepankar Medhi
+0124287514	Kumar, Anurag; Janjunath, D.; Kuri, Joy
+155860913X	Farrel, Adrian
+1558608109	Loshin, Peter
+1558608281	Walter Ciciora, James Farmer, David Large, Michael Adams
+1558609342	C Bala Kumar
+1558608591	Strassner, John
+0120421712	Aboelela, Emad
+155860832X	Peterson, Larry L.; Davie, Bruce S.
+1558608877	McCabe, James D.
+155860751X	Nadeau, Thomas D.
+155860782X	Loshin,Peter
+155860779X	Monique Morrow, Kateel Vijayananda
+1558606556	Rajiv Ramaswami, Kumar Sivarajan
+1558605460	Black, Sharon K.
+1558606084	Wang, Zheng
+1558606459	Ralph Wittmann, Martina Zitterbart
+1558605746	Walrand, Jean; Varaiya, Pravin; Varaiya, P. P.
+1558605371	David G. Messerschmitt
+1558605711	Bernhard Neumair, Heinz-Gerd Hegering, Sebastian Abeck
+1558605754	Fowler
+1558604588	Robert Cahn
+0123704529	Hornick, Mark F.
+0123735777	Refaat, Mamdouh
+0123735963	Celko, Joe
+0123694469	Samet, Hanan
+0123695120	Joe Celko
+0120887983	Hay, David C.
+1558607110	Melton, Jim; Buxton, Stephen
+1558609016	Han
+0126853525	Toby J. Teorey, Sam Lightstone, Tom Nadeau
+0120887991	Guting, Ralf Hartmut
+0122205316	Michael J. Donahoo, Gregory D. Speegle
+0123693799	Celko, Joe
+0120884070	Ian H. Witten, Eibe Frank
+0120887975	Joe Celko
+0121942759	Earl Cox
+0126445516	Graeme Simsion, Graham Witt
+0120455994	Aiken, Peter
+1558609202	Celko, Joe
+1558609296	Schiller
+1558609180	Chisholm, Malcolm
+1558609075	Bean, James
+155860653X	Pyle, Dorian
+1558609008	James McGovern, Sameer Tyagi, Michael Stevens, Sunil Mathew
+1558608761	Harrington, Jan L.
+1558608923	Bean, James
+1558608435	Ceri
+1558607544	Chakrabarti, Soumen
+1558606777	Jim Melton
+1558607536	Shasha, Dennis; Bonnet, Philippe
+1558608206	Harrington, Jan L.
+1558606890	Usama Fayyad, Georges Grinstein
+1558605088	Vossen, Gottfried
+1558605886	Philippe Rigaux, Michel O. Scholl, Agnes Voisard
+1558604561	Melton, Jim; Simon, Alan R.
+1558606726	Halpin, Terry
+1558606424	Klaus R. Dittrich
+1558606971	Chisholm, Malcolm
+155860684X	Westerman,Paul
+1558604383	O'Neil, Patrick; O'Neil, Elizabeth
+1558606475	Catell, Rick (Author) Cattell, R. G. G. (Author) Cattell, R. G. (Editor)
+155860622X	Abiteboul, Serge
+1558604324	Celko, Joe
+1558605290	Pyle, Dorian
+1558605150	Robert J. Muller
+155860216X	Ahmed Elmagarmid
+1558604820	Chamberlin, Don
+1558604340	Yu, Clement
+1558604537	Celko, Joe
+1558604154	Philip A. Bernstein, Eric Newcomer
+1558603484	Nancy A. Lynch
+1558603042	Jennifer Widom
+1558602712	Johann Freytag
+1558602453	Jim Melton, Alan R. Simon
+1558601902	Gray, Jim
+1558601694	Bancilhon, Francois
+1558602143	Elmagarmid, Ahmed K. (ed.)
+0125662513	John Pruitt, Tamara Adlin
+0120958112	Mayhew,Deborah J
+0120884364	Stone, Debbie
+1558609350	Courage, Catherine
+0123540518	Holtzblatt, Karen
+1558607528	Susan Fowler
+1558609369	Ling,Rich
+1558608192	Ware, Colin
+1558608311	Mirel, Barbara
+1558608087	John M. Carroll
+1558609156	Benjamin B. Bederson, Ben Shneiderman
+1558608702	Snyder, Carolyn
+1558606432	Fogg
+1558608214	Nielsen, Jakob
+1558606580	Brinck, Tom
+1558607129	Rosson, Mary Beth
+1558606882	Henry Lieberman
+1558605975	Allison Druin, James Hendler
+1558605827	Johnson, Jeff
+1558606009	Bergman, Eric
+1558605614	Deborah J. Mayhew
+1558605339	Stuart K. Card, Jock D. Mackinlay, Ben Shneiderman
+155860569X	Spool, Jared M.; Scanlon, Tara; Schroeder, Will; Snyder, Carolyn; DeAngelo, Terri
+1558604189	Dan R. Olsen
+1558604448	Mark Maybury, Wolfgang Wahlster
+1558604111	Hugh Beyer
+0125184085	Nielsen, Jakob
+0125184069	Nielsen, Jakob
+0123706092	Ian H. Witten, Marco Gori, Teresa Numerico
+1558609245	Michael Lesk
+155860829X	Zoe Lacroix
+1558607900	Witten,Ian
+1558607145	Ingemar Cox; Matthew Miller; Jeffrey Bloom; Mathew Miller
+1558606513	Jeffay, Kevin
+1558606246	Alberto del Bimbo
+1558605703	Ian Witten
+1555583008	Bijaoui, Pierre
+1555583288	Haletky, Edward
+0750661313	Grimer, Tony
+1555583202	Kavanagh, Paul
+1555582435	Baldwin, Lawrence
+1555582737	Gancarz, Mike
+1555582761	Joseph McMullen, Richard Holstein, Philip E. Bourne
+1555582990	Lissoir,Alain
+1555582818	Miller, David Donald
+1555582672	John Robert Wisniewski
+1555582664	Lissoir, Alain
+1555582850	Stanley, Nigel
+1555582591	Fafrak
+1555581595	Goldenberg, Ruth E.
+1555582745	Moore
+1555582796	Duffy, Michael D.
+1555582532	Gary Mauler
+1555582559	Matthew Cheek
+012251341X	Jesse Feiler
+0750673540	Craig Peacock
+1555582400	Micky Balladelli, Jan De Clercq
+1555582273	Steven Hancock
+1558604960	John R. Levine
+1555581994	Cheek, Matthew
+1555581552	Richard Holstein
+1555582036	Patrick Holmay
+1555582028	Alpha Architecture Committee
+1555581579	David Donald Miller
+1555581269	Sethi, Joginder
+1555581234	Mike Gancarz
+0750679999	Pearson, Robert
+0750679298	Kovacich, Gerald L. Jones, Andy
+155558344X	Xypro Technology Corp
+1555583393	PhD, CISM, John Rittinghouse; PhD, CISM, CISSP, James F. Ransome
+0750678038	Carl Roper
+0124730515	Clement,John G.
+1555583385	PhD, CISM, John Rittinghouse, PhD, CISM, CISSP, James F. Ransome
+0750677465	Chandra, Praphul
+1555583342	Ben-Natan, Ron
+0750677953	Jones, Andy
+1555582974	Vacca
+1555583326	Ransome
+0121631052	Monique Ferraro, Eoghan Casey
+0750678488	Michael Erbschloe
+0121631044	Casey, Eoghan
+1555582834	Jan De Clercq
+0127427511	Weiss, Jason
+1555583172	Rittinghouse, John
+1555583121	Michael Erbschloe
+1555583148	Xypro Technology Corp
+1555582982	Ellis, Juanita
+0750676132	Mena, Jesus
+0121604527	Charles Carrington, Timothy Speed, Juanita Ellis, Steffano Korper
+0750673273	Daniel Jennings, Joseph Boyce
+1558607692	Wayner, Peter
+1878707965	Stefanek, George L.
+0121631036	Eoghan Casey
+0126565619	Speed, Tim; Ellis, Juanita; Korper, Steffano
+0750649445	Hutchinson, William
+0122374711	Ellis, Juanita/ Speed, Tim
+0750672579	Boni, William C.
+0750670290	Boni, William C.
+0750699388	Shaw, Paul
+0750696001	Carroll, John M.
+0750696915	James L. Schaub &amp; Toni Ames
+0123735858	Weilkiens, Tim Oestereich, Bernd
+0123725011	Utting, Mark Legeard, Bruno
+0120121689	Zelkowitz, Marvin
+0122290631	Eberly, David H.
+0120121670	Zelkowitz, Marvin
+0120121662	Marvin Zelkowitz
+0120885603	Pei Zheng, Lionel Ni
+0750664711	Williams, Rob
+1558606483	Puder
+0750665076	Tom Gilb
+0120121654	Marvin Zelkowitz
+0750660759	Zhu, Hong
+0120121646	Marvin Zelkowitz
+0120121638	Marvin Zelkowitz
+1558607013	Dominus, Mark Jason
+1558608176	Peter Braun, Wilhelm R. Rossak
+0750661232	Britton, Carol
+1555583180	Hagino,Jun-ichiro
+1558606874	Zullighoven
+012012162X	Marvin Zelkowitz
+0120121611	DESCHAMPS A
+1555583156	Reid, Fiach
+0750660988	Barclay
+155558313X	Rittinghouse
+0750656832	By (author) Pooley, Rob By (author) Wilcox, Pauline
+1555583075	Metzger, Robert Charles
+1558608362	Brunner, Robert
+075065855X	Attenborough, Mary
+012012159X	Zelkowitz, Marvin
+0120121581	DESBILLONS
+0120121573	Marvin Zelkowitz
+1558608028	Flynt, Clif
+1558607552	Wieringa
+1558608621	Sue Spielman
+0120121565	Zelkowitz, Marvin
+1558606394	Demeyer, Serge
+1558607455	Daum, Berthold; Merten, Udo
+0750674032	Schmitt, Ron
+1555582494	Norman Lawrence
+1558608265	Michael J. Donahoo, Kenneth L. Calvert, S. Donahoo
+1558606858	Kenneth L. Calvert, Michael J. Donahoo
+1558607366	Speegle, Gregory
+0120121557	Marvin Zelkowitz
+0120121549	Zelkowitz, Marvin (ed.)
+075067329X	Brown, Marty
+044450673X	Jenssen, C. B.
+0750672811	Helge Granberg, Norm Dye
+1558606793	Besset, Didier H.
+1558607234	L?szl? B?sz?rm?nyi
+1558605932	Eberly, David H.
+0444505563	A. T. Nakagawa (editor); T. Tamai (editor); Kokichi Futatsugi (editor)
+0127347607	Dongming Wang Xiao-Shan Gao
+0120121522	Zelkowitz, Marvin
+0125250959	Katsunari Okamoto
+0120121514	DELVOLVE
+0120121506	DEL SOTTO
+0123264286	Harrington, Jan L.
+0127887741	Peter Wayner
+0120121484	Marvin Zelkowitz
+1555582184	Etzel, Michael
+0750696559	Lenk, John D.
+0121403106	Bull, David R.
+0750670738	Kularatna, Nihal
+0750670622	Williams, Jim
+0750670630	Chris Schroeder
+0750696524	Lenk, John D.
+0750690895	Clive Maxfield
+0124438660	Cornelius T. Leondes
+0124438652	Cornelius T. Leondes
+0124438679	Leondes, Cornelius T.,
+0750670061	Technical Marketing Staff of Gates Energy Products
+0124438644	Leondes, Cornelius T.,
+0124438628	Leondes, Cornelius T.
+0340700149	Buchanan, William
+0750696540	John Lenk
+1558603204	Muchnick, Steven S.; Muchnick and Associates
+1558604375	Robert J. Muller
+0750698586	Newnes
+1555581676	Richard Walters
+0123951704	Thomas L. Koch
+0750695099	Lenk, John D.
+0123951712	Kaminow,Koch,Kaminow,Koch,
+0123490405	Hinchey, Michael,
+0750695080	John Lenk
+0750697008	Schroeder, Chris
+0750698217	Lenk, John D.
+0340645881	Hahn, Brian D./ Kemp, Ray
+0750695102	Lenk, John D.
+0126443750	Simovici, Dan A.
+034061398X	Haigh, Jim
+0340600349	HAHN, BRIAN D. (ASSOCIATE PROFESSOR, DEPARTMENT OF APPLIED MATHEMATICS, UNIVERSITY OF CAPE TOWN, SOUTH AFRICA)
+0125062303	Morik, Katharina
+0126290407	Schreiber, Guus/ Wielinga, Bob/ Breuker,
+1555580890	Brain, Marshall
+0120828103	Bauer, Barr E.
+0444888144	By (author) Brezinski, C. By (author) Redivo Zaglia, M.
+1558601910	Norvig, Peter
+0124841406	McHaney, Roger W.
+0750696400	Williams, Jim
+0750694998	Pease, Robert A.
+0122090489	Demler, Michael J.
+0127748601	Yuasa, Taiichi
+1555580416	Guy Steele
+0444520872	By (author) Deza, Michel-Marie By (author) Deza, Elena
+0240807944	Arthur, Magan H.
+012620862X	Sayood, Khalid
+1555583113	Greg Schulz
+1555582885	Vallath, Murali
+0124438954	Leondes,Cornelius T
+1555582397	Pierre Bijaoui
+0122941519	Govil,Manish; Proth,Jean-Marie
+1558607137	Simon, Alan R./ Shaffer, Steven L.
+0124558402	David Loshin
+0122384520	Enderton, Herbert B.
+012443875X	Cornelius T. Leondes
+0124499759	Lientz,Bennet
+1558603697	Gibson, Jerry D.; Berger, Toby
+1558604030	Weiss, Sholom M.
+0122661702	Frants, Valery J.
+1558604545	Edited by Jones, Karen Sparck Edited by Willett, Peter
+0120959704	Bidgoli, Hossein
+0120510405	Allen, Bryce
+0124650309	Maguire, Carmel
+1558602534	Fox
+0124383807	Laurini, Robert; Thompson, Derek
+0126542619	Soergel, Dagobert
+0121674517	Patrick,Brian G
+0127323503	Wall, David
+0124660517	Calvert,Kenneth L
+0126567557	Spielman, Sue
+1558609091	Michael Sikora
+155860846X	Almeroth, Kevin C.
+0131496980	Ericson, Barbara; Guzdial, Mark
+0131872893	Dann
+0131194593	Sprankle, Maureen
+013046709X	Reed, David
+0131176552	Guzdial, Mark
+0130602396	Dan Robinson
+0130494984	Bohl, Marilyn/ Rynn, Maria
+0131227068	Moshe F. Rubinstein, Iris R. Firstenberg
+0130920657	Jay Singelmann
+0132320495	Liang, Y. Daniel
+0131857576	Harvey &amp; Paul) Deitel &amp; Associates
+0131426605	DEITEL
+0131857584	Deitel &amp; Associates; Deitel, Paul J.
+0134373774	Deitel, Paul J.
+0130914266	Adams, Joel
+0130853755	Johnston, Barbara
+0130132497	H. M. Deitel
+0132681528	Ford, William H.; Topp, William R.
+0131525239	Deitel &amp; Associates
+0131426419	Deitel, Harvey M.; Deitel, Paul J.; Hoey, Tim; Yaeger, Cheryl H.
+0131986198	Venugopal, Sesh
+0132221586	Liang, Y.Daniel
+0132237385	Liang, Y. Daniel
+0132222205	Deitel &amp; Associates
+0131735799	Parr, Mike; Bell, Douglas
+0131474340	Ralph Morelli, Ralph Walde
+013197629X	Kolling, Michael
+0131856456	Durney, Brian
+0131483986	Harvey M. Deitel, Paul J. Deitel
+0131424157	Bruce, Kim B./ Danyluk, Andrea Pohoreckyj/ Murtagh, Thomas P.
+0131492020	Savitch, Walter
+0131486608	Deitel, Harvey M.; Deitel, Paul J.
+0131541579	Deitel, Harvey M.; Deitel, P. J.
+0131018604	Staugaard, Andrew
+013048623X	Johnston, Barbara
+0131427814	Bartlett
+0131426486	Harvey M. Deitel, Paul J. Deitel, Deitel, Associates
+0131410792	Liang, Y. Daniel
+0131410806	Liang, Y. Daniel
+0130142514	Adams, Joel/ Nyhoff, Jeffrey L.
+0131482394	Langr, Jeff
+013143697X	Carl Albing, Michael Schwarz
+0131463055	Geary, David; Horstmann, Cay
+0131401602	Chatterjee, Sandeep; Webber, James
+0131482114	Van Der Linden, Peter
+0130649341	Deitel, Harvey M./ Deitel, Paul J.
+0130166383	Kevin Chu, Eric Brower
+0132438623	Harvey &amp; Paul) Deitel &amp; Associates
+0131869000	H.M. Deitel, P.J. Deitel
+0672325314	Holzner, Steve
+0131409093	Nyhoff, Larry R.
+013919424X	Weiss, Mark Allen
+0130858501	Ford, William
+0130284467	Shaffer, Clifford A.
+0137689950	Kruse, Robert L.; Ryba, Alexander J.; Ryba, Alex
+0130369977	Langsam, Yedidyah; Augenstein, Moshe J.; Tenenbaum, Aaron M.
+0131972596	Taubenfeld, Gadi
+0023606924	Richard Johnsonbaugh, Marcus Schaefer
+0133350681	Brassard, Gilles; Bratley, Paul
+0137903952	Russell, Stuart J.; Norvig, Peter
+0130257869	Watt, David A./ Brown, Deryck F.
+0131821067	Holmes, Jim
+0130481904	Pittman, Thomas
+0130351180	Liang, Y. Daniel/ Zhang, Hong
+0131496700	Francis Hill
+0131452541	Steve Cunningham
+0130153907	Hearn, Donald; Baker, M. Pauline
+0130411612	McCracken, Daniel D./ Wolfe, Rosalee J./
+0131739026	Walker, James Faure
+0131238035	Young, Douglas A.
+0134999975	Oliver Jones
+0321340795	Williams, Rob
+0131856448	Stallings, William
+0131485210	Tanenbaum, Andrew S.
+0131491792	Comer, Douglas E.
+0130484407	Heuring, Vincent P.; Jordan, Harry F.
+0131420445	Britton, Robert
+013034074X	Bryant, Randal E.; O'Hallaron, David R.
+0201436647	Murdocca, Miles J.; Heuring, Vincent
+0132212110	Hoffer, Jeffrey A.; Prescott, Mary B.; McFadden, Fred R.
+0131453203	Hoffer, Jeffrey A.; McFadden, Fred R.; Prescott, Mary B.
+0131018574	Shah, Nilesh
+0130174807	Shekhar, Shashi/ Chawla, Sanjay
+0130319953	Garcia-Molina, Hector; Ullman, Jeffrey D.; Widom, Jennifer D.
+0130353000	Jeffrey D. Ullman, Jennifer D. Widom
+0130304182	Blaha, Michael
+0130286524	Dietrich, Suzanne W
+0131400851	Thomas W. Miller
+0130888923	Margaret H. Dunham
+0131679953	Edgar G. Goodaire, Michael M. Parmenter
+0131176862	Johnsonbaugh, Richard
+0130457973	Bernard Kolman, Robert C. Busby, Sharon Cutler Ross
+0130457914	James A. Anderson
+0130669482	Gossett, Eric
+0130652474	Ross; Wright
+0130186619	Feil, Todd; Krone, Joan
+0130654876	Hamburger; Richards, Dana
+0135012066	Grassman &amp; Tremblay
+013214171X	Roberts, Fred S.
+0131003127	Edward M. Schwalb
+0130460990	Aura Ganz, Zvi Ganz, Kitti Wongthavarawat
+0131414631	Jitae Shin, Daniel C. Lee, C.C. Jay Kuo, C.-C. Jay Kuo
+013031398X	Rao, K. Ramamohan; Rao, K.R.; Bojkovic, Z. S.; Bojkovic, Zoran S.; Milovanovic, Dragorad A.
+0138569231	Effelsberg, Wolfgang
