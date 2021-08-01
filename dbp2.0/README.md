@@ -19,7 +19,7 @@ The DBP2.0 dataset can be downloaded from the [figshare repository](https://doi.
 * splits/test_unlinked_ent1: test data for dangling entity detection, list of dangling entities in the ZH or JA or FR KG;
 * splits/test_unlinked_ent2: test data for dangling entity detection, list of dangling entities in the EN KG;
 
-The statistics of DBP2.0 are listed below.
+The statistics of DBP2.0 are listed below. Please refer to the following table for data statistics. Our ACL-2021 version has a typo in its Table 1.
 
 <table style='text-align:right; border:1px'>
     <tr>
@@ -53,16 +53,36 @@ For dangling entity detection, we split 30% of dangling entities for training, 2
 
 ## Source Code
 
-> Coming soon! (I need some time to clean the code and integrate it into OpenEA)
-
 ### Dependencies
 * [OpenEA](https://github.com/nju-websoft/OpenEA)
 
 ### Running 
 
-> Due to the instability of embedding-based methods, it is acceptable that the results fluctuate a little bit (1-2%) when running code repeatedly.
+For example, to run MTransE /w MR on ZH-EN for dangling entity detection and entity alignment in the consolidated evaluation setting, please use the following command:
 
-> If you have any difficulty or question in running code and reproducing expriment results, please email to zqsun.nju@gmail.com.
+```bash
+python main.py --training_data ../DBP2.0/zh_en/
+```
+
+Then you can get the following results:
+```log
+Training ends. Total time = 16287.9 s.
+
+testing synthetic alignment...
+accurate results: hits@[1, 5, 10] = [0.375 0.607 0.694], mr = 1140.336, mrr = 0.483286, time = 26.308 s 
+
+evaluating two-step alignment (margin)...
+dangling entity detection...
+0.47386193 [0.4071933  0.6009897  0.4799636  ... 0.5834934  0.6566442  0.30102754]
+precision = 0.784, 
+recall = 0.709, 
+f1 = 0.745, 
+accuracy = 0.703, 
+matchable and predicted matchable: 11519; predicated matchable: 19053
+two-step results, precision = 0.302, recall = 0.346, f1 = 0.323, recall@10 = 0.585
+```
+
+> If you have any difficulty or question in running code, please email to zqsun.nju@gmail.com.
 
 ## Citation
 If you use the DBP2.0 dataset or our source code, please kindly cite it as follows:   

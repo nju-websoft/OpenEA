@@ -9,7 +9,9 @@
 
 *** **UPDATE** ***
 
-- June 29, 2021: We release the [DBP2.0](https://github.com/nju-websoft/OpenEA/tree/master/dbp2.0) dataset for [entity alignment with dangling cases](https://arxiv.org/pdf/2106.02248.pdf) (the source code is coming soon).
+- Aug. 1, 2021: We release the source code for [entity alignment with dangling cases](https://sunzequn.github.io/articles/acl2021_dbp2.pdf).
+
+- June 29, 2021: We release the [DBP2.0](https://github.com/nju-websoft/OpenEA/tree/master/dbp2.0) dataset for [entity alignment with dangling cases](https://sunzequn.github.io/articles/acl2021_dbp2.pdf).
 
 - Jan. 8, 2021: The results of AliNet on OpenEA datasets are avaliable at [Google docs](https://docs.google.com/spreadsheets/d/1P_MX8V7zOlZjhHlEMiXbXlIaMGSJT1Gh_gZWe4yIQBY/edit?usp=sharing).
 
