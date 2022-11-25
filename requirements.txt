@@ -6,3 +6,4 @@ gensim==3.8.3
 python-Levenshtein
 scipy
 matplotlib
+ray
