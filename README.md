@@ -106,10 +106,9 @@ src/
 #### Installation
 We recommend creating a new conda environment to install and run OpenEA. You should first install tensorflow-gpu (tested on 1.8 and 1.12), graph-tool (tested on 2.27 and 2.29,  the latest version would cause a bug), and python-igraph using conda:
 ```bash
-conda create -n openea python=3.6
+conda create --name openea python=3.6 graph-tool==2.40 -c conda-forge
 conda activate openea
 conda install tensorflow-gpu==1.12
-conda install -c conda-forge graph-tool==2.29
 conda install -c conda-forge python-igraph
 ```
 

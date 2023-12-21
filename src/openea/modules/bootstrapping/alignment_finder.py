@@ -81,7 +81,7 @@ def mwgm(pairs, sim_mat, func):
 
 
 def mwgm_graph_tool(pairs, sim_mat):
-    from graph_tool.all import Graph, max_cardinality_matching  # necessary
+    from graph_tool.all import Graph, max_cardinality_matching, __version__  # necessary
     if not isinstance(pairs, list):
         pairs = list(pairs)
     g = Graph()
@@ -101,8 +101,11 @@ def mwgm_graph_tool(pairs, sim_mat):
         e = g.add_edge(n1, n2)
         edges.append(e)
         weight_map[g.edge(n1, n2)] = sim_mat[x, y]
-    print("graph via graph_tool", g)
-    res = max_cardinality_matching(g, heuristic=True, weight=weight_map, minimize=False)
+    # print("graph via graph_tool", g, g.num_vertices(), g.num_edges(), __version__)
+    if float(__version__.split(" ")[0]) > 2.29:
+        res = max_cardinality_matching(g, heuristic=True, weight=weight_map, minimize=False, edges=True)
+    else:
+        res = max_cardinality_matching(g, heuristic=True, weight=weight_map, minimize=False)
     edge_index = np.where(res.get_array() == 1)[0].tolist()
     matched_pairs = set()
     for index in edge_index:
