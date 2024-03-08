@@ -5,7 +5,20 @@
 [![made-with-Tensorflow](https://img.shields.io/badge/Made%20with-Tensorflow-orange.svg?style=flat-square)](https://www.tensorflow.org/)
 [![Paper](https://img.shields.io/badge/VLDB%202020-PDF-yellow.svg?style=flat-square)](http://www.vldb.org/pvldb/vol13/p2326-sun.pdf)
 
-> Entity alignment seeks to find entities in different knowledge graphs (KGs) that refer to the same real-world object. Recent advancement in KG embedding impels the advent of embedding-based entity alignment, which encodes entities in a continuous embedding space and measures entity similarities based on the learned embeddings. In this paper, we conduct a comprehensive experimental study of this emerging field. This study surveys 23 recent embedding-based entity alignment approaches and categorizes them based on their techniques and characteristics. We further observe that current approaches use different datasets in evaluation, and the degree distributions of entities in these datasets are inconsistent with real KGs. Hence, we propose a new KG sampling algorithm, with which we generate a set of dedicated benchmark datasets with various heterogeneity and distributions for a realistic evaluation. This study also produces an open-source library, which includes 12 representative embedding-based entity alignment approaches. We extensively evaluate these approaches on the generated datasets, to understand their strengths and limitations. Additionally, for several directions that have not been explored in current approaches, we perform exploratory experiments and report our preliminary findings for future studies. The benchmark datasets, open-source library and experimental results are all accessible online and will be duly maintained. 
+> Entity alignment seeks to find entities in different knowledge graphs (KGs) that refer to the same real-world object. Recent advancement in KG embedding impels the advent of embedding-based entity alignment, which encodes entities in a continuous embedding space and measures entity similarities based on the learned embeddings. In this paper, we conduct a comprehensive experimental study of this emerging field. This study surveys 23 recent embedding-based entity alignment approaches and categorizes them based on their techniques and characteristics. We further observe that current approaches use different datasets in evaluation, and the degree distributions of entities in these datasets are inconsistent with real KGs. Hence, we propose a new KG sampling algorithm, with which we generate a set of dedicated benchmark datasets with various heterogeneity and distributions for a realistic evaluation. This study also produces an open-source library, which includes 12 representative embedding-based entity alignment approaches. We extensively evaluate these approaches on the generated datasets, to understand their strengths and limitations. Additionally, for several directions that have not been explored in current approaches, we perform exploratory experiments and report our preliminary findings for future studies. The benchmark datasets, open-source library and experimental results are all accessible online and will be duly maintained.
+
+## Key contributors ✨
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://sunzequn.github.io/"><img src="https://sunzequn.github.io/homepage/profile.jpg" width="100px;" alt="Zequn Sun"/><br /><b>Zequn Sun (NJU)</b></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ws.nju.edu.cn/~whu"><img src="http://ws.nju.edu.cn/wiki/attach/Wei%20Hu/me5.jpeg" width="100px;" alt="Wei Hu (NJU)"/><br /><b>Wei Hu (NJU)</b></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://muhaochen.github.io/"><img src="https://muhaochen.github.io/index_files/kemper_courtyard.png" width="100px;" alt="Muhao Chen (NJU)"/><br /><b>Muhao Chen (UC Davis)</b></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://tjdi.tongji.edu.cn/TeacherDetail.do?id=4991&lang=_en"><img src="https://tjdi.tongji.edu.cn/uploadfile/201909/16/1222111845.png" width="90px;" alt="Haofen Wang (TONGJI)"/><br /><b>Haofen Wang (TONGJI)</b></a><br /></td>
+    </tr>
+  </tbody>
+</table>
 
 *** **UPDATE** ***
 
